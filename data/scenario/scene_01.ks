@@ -3,6 +3,8 @@
 [cm]
 [clearfix]
 
+@chara_hide_all
+
 ;メッセージウィンドウの設定
 @position layer="message0" left=90 top=5 width=1100 height=710 page=fore visible=true
 
@@ -19,6 +21,7 @@
 @showmenubutton
 
 
+@chara_show name="main"
 _　わたしは「じゃすと東北株式会社」の社員だ。[l][r]
 _　わたしはそこで……[l][r]
 [r]

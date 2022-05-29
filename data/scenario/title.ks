@@ -2,6 +2,7 @@
 
 [cm]
 
+@chara_hide_all
 @layopt layer="message0" visible=false
 @clearstack
 @bg storage="title.jpg" time=100

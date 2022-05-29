@@ -11,6 +11,15 @@
 
 ;ゲームで必ず必要な初期化処理はこのファイルに記述するのがオススメ
 
+;キャラクター定義
+@chara_new name="main" storage="chara/main/main_stand.png"
+@chara_face name="main" face="orz" storage="chara/main/main_orz.png"
+@chara_face name="main" face="down" storage="chara/main/main_down.png"
+
+@chara_new name="manager" storage="chara/manager/manager_stand.png"
+
+@chara_new name="leader" storage="chara/leader/leader_stand.png"
+
 ;メッセージボックスは非表示
 @layopt layer="message" visible=false
 
