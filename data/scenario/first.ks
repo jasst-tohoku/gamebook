@@ -22,6 +22,10 @@
 
 @chara_new name="qa" storage="chara/qa/qa_stand.png"
 
+@chara_new name="godhand" storage="chara/godhand/godhand_stand.png"
+
+@chara_new name="infra" storage="chara/infra/infra_stand.png"
+
 ;メッセージボックスは非表示
 @layopt layer="message" visible=false
 
