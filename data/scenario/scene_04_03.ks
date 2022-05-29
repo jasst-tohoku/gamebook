@@ -20,10 +20,10 @@ _　スコープも定まったし、部長に報告だ。[l][r]
 *choice
 [cm]
 @chara_mod name="main" face="default"
-
-@chara_show name="manager" reflect=true
+@chara_show name="manager"
 「システムテストを自動化するんだね。自動テストが構築できたら手動テストの工数はゼロになるよね。初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
 _　部長は年次の工数計画を確認している。[l][r]
+@chara_hide name="manager"
 _　なんの工数を計上してもらおうか。[l][r]
 [r]
 [nowait]
@@ -37,7 +37,6 @@ _　なんの工数を計上してもらおうか。[l][r]
 *selectA
 [cm]
 
-@chara_hide name="manager"
 [font color="0xffd700"]Ａ）部長の言う通りの工数を計上してもらう。[resetfont][l][r]
 [r]
 _　手動テストと同じ工数では、使用するテストツールの選定までしか終わらなかった。[l][r]
@@ -58,7 +57,6 @@ _　部長からはなぜ何もできていないんだと詰められ、これ�
 *selectB
 [cm]
 
-@chara_hide name="manager"
 [font color="0xffd700"]Ｂ）自動テストの実装工数を計算しなおして計上してもらう。[resetfont][l][r]
 [r]
 _　自動テスト担当者は今回使おうとしているツールを使ったことがなかったよう。実装する時間に追われて、保守が難しいテストコードがつくられてしまった。[l][r]

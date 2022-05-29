@@ -25,6 +25,7 @@ _　その後、順調にテスト自動化が進んでいるように見えた�
 _　テストリーダーが話しかけてきた。悪い予感がする。[l][r]
 _　話を聞いてみると、テスターチームが自動化に不慣れで、実装が思うように進んでいないらしい。[l][r]
 _　このままではプロジェクトの進行にも影響が出てしまう。[l][r]
+@chara_hide name="leader"
 _　どう対応しようか。[l][r]
 [r]
 [nowait]
@@ -37,7 +38,6 @@ _　どう対応しようか。[l][r]
 
 *selectA
 [cm]
-@chara_hide name="leader"
 
 [font color="0xffd700"]Ａ）諦めて全て手動で実行する。[resetfont][l][r]
 [r]
@@ -59,7 +59,6 @@ _　リグレッションテストの実行に膨大な工数がかかるよう�
 
 *selectB
 [cm]
-@chara_hide name="leader"
 
 [font color="0xffd700"]Ｂ）開発者に、代わりに自動テストを書いてもらう。[resetfont][l][r]
 [r]
@@ -83,7 +82,6 @@ _　信頼できる自動テストは、ついに実現できなかった。[l][
 
 *selectC
 [cm]
-@chara_hide name="leader"
 
 [font color="0xffd700"]Ｃ）メンバー同士相互のコードレビューや、開発者によるコードレビュー、ペアプログラミングを行う。[resetfont][l][r]
 [r]

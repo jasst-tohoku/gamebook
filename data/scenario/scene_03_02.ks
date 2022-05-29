@@ -51,7 +51,7 @@ _　…………[l][r]
 
 [cm]
 
-@chara_show name="qa" reflect=true
+@chara_show name="qa"
 「じゃあ、ミーティングの参加お願いね」[l][r]
 [r]
 @chara_hide name="qa"

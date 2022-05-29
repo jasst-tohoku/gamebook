@@ -30,7 +30,7 @@ _　…………[l][r]
 [cm]
 
 @layopt layer=1 visible=true
-@chara_show name="manager" reflect=true
+@chara_show name="manager"
 「来週頭には試作機がくるけど、気になることはあるかな」[l][r]
 [r]
 _　おぉ、ついに試作機がくるか。[l][r]
@@ -123,7 +123,7 @@ _　…………[l][r]
 
 「って感じですけど、何か質問ありますか？」[l][r]
 [r]
-@chara_show name="qa" reflect=true
+@chara_show name="qa"
 _　……返す言葉はなにもない。[l][r]
 _　試作機の受け入れテストでわたしのチームの担当範囲で不具合が多発して、まともにテストができないとQA部門から指摘された。[l][r]
 _　試作機でしか動かない機能の部分で軒並み不具合が発生していた。[l][r]

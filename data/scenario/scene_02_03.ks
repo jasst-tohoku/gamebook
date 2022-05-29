@@ -19,8 +19,9 @@ _　一旦はテストリーダーからのトライアル報告を待つこと�
 _　２週間後、テストリーダーからトライアルの報告があった。[l][r]
 @chara_show name="leader"
 _　概要は以下のようなものだった。どちらのツールを使おうか。[l][r]
+@chara_hide name="leader"
 [r]
-@image layer=1 storage=table_01.png visible=true top=170 left=150
+@image layer=2 storage=table_01.png visible=true top=170 left=150
 [r]
 [r]
 [r]
@@ -37,14 +38,12 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 [s]
 
 *selectA
-@layopt layer=1 visible=false
-@chara_hide name="leader"
+@layopt layer=2 visible=false
 @jump storage="scene_02_04_A.ks" target="*start"
 [s]
 
 
 *selectB
-@layopt layer=1 visible=false
-@chara_hide name="leader"
+@layopt layer=2 visible=false
 @jump storage="scene_02_04_B.ks" target="*start"
 [s]

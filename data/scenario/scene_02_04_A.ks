@@ -28,6 +28,7 @@ _　テストリーダーが話しかけてきた。悪い予感がする。[l][
 
 _　話を聞いてみると、テスト自動化が容易であるがゆえに、自動テストケースが増えすぎて困っているらしい。[l][r]
 _　特に、似たような手順でデータのパターンが異なる自動テストが大量にできてしまい、自動テストの管理や実行結果の確認の手間が増えているそうだ。[l][r]
+@chara_hide name="leader"
 _　さて、どう対応しようか。[l][r]
 [r]
 [nowait]
@@ -40,7 +41,6 @@ _　さて、どう対応しようか。[l][r]
 
 *selectA
 [cm]
-@chara_hide name="leader"
 
 [font color="0xffd700"]Ａ）きっとツールに問題があったんだ。テストリーダーが検討していたツールに乗り換えよう。[resetfont][l][r]
 [r]
@@ -70,7 +70,6 @@ _　テストチームは連日の残業で疲弊し、多くの不具合を見�
 
 *selectB
 [cm]
-@chara_hide name="leader"
 
 [font color="0xffd700"]Ｂ）データ駆動など、自動テストの実装や保守の負担を軽減する可能性がある技法を取り入れてみよう。[resetfont][l][r]
 [r]
