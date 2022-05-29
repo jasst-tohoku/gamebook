@@ -20,6 +20,8 @@
 
 @chara_new name="leader" storage="chara/leader/leader_stand.png"
 
+@chara_new name="qa" storage="chara/qa/qa_stand.png"
+
 ;メッセージボックスは非表示
 @layopt layer="message" visible=false
 
