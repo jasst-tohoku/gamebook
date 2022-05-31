@@ -2,8 +2,8 @@
 ;debugMenu.visible=false
 ;configSave=webstorage
 ;global.config_version=5.00
-;System.title=JaSST '22 Tohoku
-;projectID=jasst_22_tohoku_lovel
+;System.title=JaSST'22TohokuNovel
+;projectID=jasst_22_tohoku_novel
 ;game_version=0.0
 ;ScreenRatio=fix
 ;patch_apply_auto=true
