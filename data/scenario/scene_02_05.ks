@@ -74,6 +74,7 @@ _　これからも、自動テストをうまく使って、開発を進めて�
 
 [cm]
 
+@eval exp="sf.end02=true"
 [font color="0xffd700" bold=true]HAPPY END[resetfont][l][r]
 [r]
 [nowait][font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont][endnowait]

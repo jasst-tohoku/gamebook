@@ -109,6 +109,7 @@ _　今回は自動化できなかったテストケースもあるし、モデ�
 
 [cm]
 
+@eval exp="sf.end04=true"
 [font color="0xffd700" bold=true]HAPPY END[resetfont][l][r]
 [r]
 [nowait]

@@ -16,6 +16,9 @@
 ;「はじめから」ボタン
 @button x=450 y=430 graphic="title/button_start.jpg" enterimg="title/button_start.jpg" target="gamestart"
 
+;「解説」ボタン
+@button x=450 y=530 graphic="title/button_commentary.jpg" enterimg="title/button_commentary.jpg" target="commentary"
+
 [s]
 
 *foreword
@@ -25,4 +28,8 @@
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
 @jump storage="scene_01.ks"
+[s]
+
+*commentary
+@jump storage="commentary.ks"
 [s]

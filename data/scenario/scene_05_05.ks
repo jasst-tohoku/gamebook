@@ -184,6 +184,7 @@ _　この喜びをさっそくチームメンバーと共有しよう。[l][r]
 
 [cm]
 
+@eval exp="sf.end05=true"
 [font color="0xffd700" bold=true]HAPPY END[resetfont][l][r]
 [r]
 [nowait]

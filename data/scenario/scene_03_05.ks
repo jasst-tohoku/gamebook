@@ -139,6 +139,7 @@ _　今回、良い製品が開発できるように向き合ったのは、結�
 
 [cm]
 
+@eval exp="sf.end03=true"
 [font color="0xffd700" bold=true]HAPPY END[resetfont][l][r]
 [r]
 [nowait][font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont][endnowait]
