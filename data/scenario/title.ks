@@ -27,7 +27,7 @@
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
-@jump storage="scene_01.ks"
+@jump storage="scene_00.ks"
 [s]
 
 *commentary

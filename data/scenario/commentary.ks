@@ -52,19 +52,19 @@ HAPPY ENDを達成すると閲覧できます[r]
 [s]
 
 *selectA
-@jump storage="scene_02_commentary.ks" target="*start"
+@jump storage="scene_01_commentary.ks" target="*start"
 [s]
 
 *selectB
-@jump storage="scene_03_commentary.ks" target="*start"
+@jump storage="scene_02_commentary.ks" target="*start"
 [s]
 
 *selectC
-@jump storage="scene_04_commentary.ks" target="*start"
+@jump storage="scene_03_commentary.ks" target="*start"
 [s]
 
 *selectD
-@jump storage="scene_05_commentary.ks" target="*start"
+@jump storage="scene_04_commentary.ks" target="*start"
 [s]
 
 *goToTitle

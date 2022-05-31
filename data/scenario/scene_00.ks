@@ -39,17 +39,17 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 [s]
 
 *selectA
-@jump storage="scene_02_01.ks" target="*start"
+@jump storage="scene_01_01.ks" target="*start"
 [s]
 
 *selectB
-@jump storage="scene_03_01.ks" target="*start"
+@jump storage="scene_02_01.ks" target="*start"
 [s]
 
 *selectC
-@jump storage="scene_04_01.ks" target="*start"
+@jump storage="scene_03_01.ks" target="*start"
 [s]
 
 *selectD
-@jump storage="scene_05_01.ks" target="*start"
+@jump storage="scene_04_01.ks" target="*start"
 [s]

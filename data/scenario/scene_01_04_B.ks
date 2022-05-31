@@ -100,5 +100,5 @@ _　結果、当初問題になっていた自動テストの不安定さにつ�
 [r]
 _　これで、今後のバージョンアップのたびにリグレッションテストが自動で行える。部長にも胸を張って報告できそうだ。[l][r]
 
-@jump storage="scene_02_05.ks" target="*start"
+@jump storage="scene_01_05.ks" target="*start"
 [s]
