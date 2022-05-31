@@ -59,9 +59,11 @@ _　最近実装したタイムアウト処理のテストが、どうしても�
 _　今は強制的に10分待たされるから、開発するにも集中が途切れてしまう。[l][r]
 
 *choice
-@chara_mod name="main" face="default"
-@chara_show name="leader"
 [cm]
+@bg storage="bg_main.jpg" time=100
+@chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
+@chara_show name="leader"
 
 _　実装時の好きなタイミングで単体テストを実行できるようにしているし、構成管理リポジトリへの反映は単体テストが成功したときにのみできるようにしている。実行頻度は高いので時間が長いのは厳しいが……。[l][r]
 [r]
@@ -116,12 +118,11 @@ _　あぁ、テストに失敗した通知が出ているのが見えた……�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 
@@ -228,10 +229,9 @@ _　まだ、渡せる時期が分かるまで時間がかかりそうだと、Q
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]

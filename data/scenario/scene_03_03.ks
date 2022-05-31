@@ -19,8 +19,11 @@ _　スコープも定まったし、部長に報告だ。[l][r]
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 @chara_show name="manager"
+
 「システムテストを自動化するんだね。自動テストが構築できたら手動テストの工数はゼロになるよね。初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
 _　部長は年次の工数計画を確認している。[l][r]
 @chara_hide name="manager"
@@ -45,12 +48,11 @@ _　部長からはなぜ何もできていないんだと詰められ、これ�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 
@@ -65,12 +67,11 @@ _　最終的にはリグレッションテストを楽にするために自動�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 

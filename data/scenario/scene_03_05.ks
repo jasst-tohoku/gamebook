@@ -26,8 +26,10 @@ _　部長から工数の承認も得たし、実現に向けて準備を進め�
 
 *choice
 [cm]
-
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
+
 _　テスト自動化担当と関係者を呼んで、自動テスト構築について打ち合わせよう。アジェンダはこんなところか。[l][r]
 _　・自動テストの実行タイミング[r]
 _　・自動テスト結果の通知方法[r]
@@ -55,12 +57,11 @@ _　PMから勝手にテスト自動化を進めたことにも不信感を持�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 *selectB
@@ -75,12 +76,11 @@ _　PMからは、これ以上のスケジュール調整はできないと言�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 *selectC

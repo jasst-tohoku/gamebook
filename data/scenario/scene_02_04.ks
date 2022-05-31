@@ -52,8 +52,10 @@ _　ただし、試作機を使ったテストができていないので、実�
 _　プログラムを試作機上で動作させるためには評価環境よりも手順が多くて１時間くらいかかりそうだが、その作業や試作機テストはQA部門が中心にやってくれる。[l][r]
 
 *choice
-@chara_mod name="main" face="default"
 [cm]
+@bg storage="bg_main.jpg" time=100
+@chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　開発環境や評価環境での従来の自動テスト資産は十分にある。[l][r]
 _　これらをどうやって活かそうか。[l][r]
@@ -91,12 +93,11 @@ _　試作機テストの不具合調査がこんなに難しいのは想定し�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 
@@ -143,10 +144,9 @@ _　その試作機だって予定通りに来なかったじゃないか。と�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]

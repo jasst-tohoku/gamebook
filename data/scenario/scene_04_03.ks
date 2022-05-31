@@ -67,7 +67,9 @@ _　こんなに教えてくれるなんて、この人は先生かな？　テ�
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　さて、借りてきた書籍もひととおり目を通したし、単体テストの完了条件を決めよう。[l][r]
 _　ブラックボックステスト技法は実装内部に着目せず、入出力が仕様に合うかに着目したものだ。対して、ホワイトボックステスト技法は実装内部に着目したものだ。[l][r]
@@ -117,12 +119,11 @@ _　できればゆっくりと振り返りをしたいところだけど、こ�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 

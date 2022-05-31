@@ -15,6 +15,9 @@ _　一旦はテストリーダーからのトライアル報告を待つこと�
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
+@chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　２週間後、テストリーダーからトライアルの報告があった。[l][r]
 @chara_show name="leader"

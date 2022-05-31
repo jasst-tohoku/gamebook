@@ -20,7 +20,9 @@ _　ああ、彼はゴッドハンドの異名を持つ、バグハンターだ�
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　改めて、リグレッションテストのテストケースを見せてもらった。[l][r]
 _　全部で200ケース、内容は「データが登録できること」といった機能に関することや、「画面に崩れがないこと」といった表示に関するものが含まれている。[l][r]
@@ -43,12 +45,11 @@ _　最初から100%に拘らず、できるところから自動化する仕組
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 

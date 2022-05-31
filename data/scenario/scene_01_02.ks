@@ -43,9 +43,11 @@ _　私はテストリーダーに、今回のプロジェクトでその「経�
 _　ずいぶん自信がありそうだな……。[l][r]
 
 *choice
-@chara_mod name="main" face="default"
-@chara_show name="leader"
 [cm]
+@bg storage="bg_main.jpg" time=100
+@chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
+@chara_show name="leader"
 
 _　面倒なことになったが、ここはマネージャとしてビシッと決めねば。[l][r]
 [r]
@@ -80,12 +82,11 @@ _　テストチームは連日の残業で疲弊し、多くの不具合を見�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 
@@ -111,12 +112,11 @@ _　テストチームは連日の残業で疲弊し、多くの不具合を見�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 

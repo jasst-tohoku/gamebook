@@ -38,7 +38,9 @@ _　最近はアジャイル開発の本とかも見ているけど、「テス�
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　わたしがこれまで経験した開発では、あらかじめシステムを機能に分割しておいて、開発者ごとに複数の担当機能を割り当てていたんだっけ。[l][r]
 _　「テストファースト」っていう考え方だと、機能を実装するときに単体テストを用意するのは……[l][r]
@@ -92,12 +94,11 @@ _　あぁ、ここの実装も、仕様と矛盾してる……。[l][r]
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 
@@ -141,10 +142,9 @@ _　これから、不機嫌なQA部門とふたりきりで話さなければ�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]

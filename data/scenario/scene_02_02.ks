@@ -19,8 +19,10 @@ _　評価機は１台しかないし、評価機でバイナリを動かすよ�
 _　うん、計画初期のテスト方針は良さそうだ。[l][r]
 
 *choice
-@chara_mod name="main" face="default"
 [cm]
+@bg storage="bg_main.jpg" time=100
+@chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　テストを自動化するにあたって、テストケースを設計し、テスト実行環境を用意し、テストコードを書いていく。[l][r]
 _　しかし、開発環境と評価環境が違うんだ。テストケースやテスト実行環境、テストコードにも環境の違いが出てくるはずだ。最初は共通のものでいいと思っていたけど、環境ごとに分けなければいけないところもあるはずだ。[l][r]
@@ -69,10 +71,9 @@ _　この先、試作機や本番機がくるのであれば、テスト資産�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]

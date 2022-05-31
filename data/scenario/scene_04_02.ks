@@ -26,7 +26,9 @@ _　リファクタリングは、やった方がいいって開発が上手い�
 
 *choice
 [cm]
+@bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
+@layopt layer="message0" visible=true
 
 _　開発プロセス上は、実装前に基本設計するフェーズがあるけど、毎回レビューでの指摘が多くって、いまだに設計が上手くできる自信がないんだよね。[l][r]
 _　リファクタリングで設計を向上できるテスト駆動開発だったら、もしかして、開発プロセスでの設計の役割が変えられるかもしれない？[l][r]
@@ -101,10 +103,9 @@ _　あのとき、部長がしっかり止めてくれれば違ったはずな�
 
 [cm]
 
-[font color="0xff0000" bold=true]BAD END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@layopt layer="message0" visible=false
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
