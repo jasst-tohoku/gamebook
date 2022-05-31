@@ -140,7 +140,10 @@ _　今回、良い製品が開発できるように向き合ったのは、結�
 [cm]
 
 @eval exp="sf.end03=true"
-[font color="0xffd700" bold=true]HAPPY END[resetfont][l][r]
-[r]
-[nowait][font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont][endnowait]
+@chara_hide_all
+@layopt layer="message0" visible=false
+@bg storage="white.jpg" time=1000 method="fadeIn"
+@bg storage="happy_end.jpg" time=1500 method="fadeIn"
+[l]
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
