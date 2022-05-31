@@ -50,6 +50,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 [cm]
 @bg storage="bg_main.jpg" time=1000
 @layopt layer="message0" visible=true
+@showmenubutton
 @jump storage="scene_01_01.ks" target="*start"
 [s]
 
@@ -63,7 +64,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 [cm]
 @bg storage="bg_main.jpg" time=1000
 @layopt layer="message0" visible=true
-
+@showmenubutton
 @jump storage="scene_02_01.ks" target="*start"
 [s]
 
@@ -77,6 +78,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 [cm]
 @bg storage="bg_main.jpg" time=1000
 @layopt layer="message0" visible=true
+@showmenubutton
 @jump storage="scene_03_01.ks" target="*start"
 [s]
 
@@ -90,5 +92,6 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 [cm]
 @bg storage="bg_main.jpg" time=1000
 @layopt layer="message0" visible=true
+@showmenubutton
 @jump storage="scene_04_01.ks" target="*start"
 [s]
