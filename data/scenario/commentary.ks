@@ -48,8 +48,6 @@ HAPPY ENDを達成すると閲覧できます[r]
 [r]
 [r]
 [font color="0xffd700"][link target="*goToTitle"]タイトルに戻る[endlink][resetfont][r]
-[else]
-[endif]
 [endnowait]
 [s]
 
