@@ -5,6 +5,8 @@
 
 @chara_hide_all
 
+@bg storage="white.jpg" time=1000
+
 ;メッセージウィンドウの設定
 @position layer="message0" left=90 top=5 width=1100 height=710 page=fore visible=true
 
@@ -12,7 +14,7 @@
 @position layer="message0" page="fore" margint=10 marginl=50 marginr=70 marginb=30
 
 ;背景を設定
-@bg storage="bg_main.jpg" time=100
+@bg storage="bg_main.jpg" time=1000
 
 ;メッセージウィンドウの表示
 @layopt layer="message0" visible=true

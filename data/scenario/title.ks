@@ -6,18 +6,19 @@
 @hidemenubutton
 @layopt layer="message0" visible=false
 @clearstack
+@bg storage="black.jpg" time=500
 @bg storage="title.jpg" time=100
 @wait time=200
 
 *start
 ;「まえがき」ボタン
-@button x=450 y=330 graphic="title/button_foreword.jpg" enterimg="title/button_foreword.jpg" target="foreword"
+@button x=500 y=400 graphic="title/go_to_foreword_off.gif" enterimg="title/go_to_foreword_on.gif" target="foreword"
 
 ;「はじめから」ボタン
-@button x=450 y=430 graphic="title/button_start.jpg" enterimg="title/button_start.jpg" target="gamestart"
+@button x=500 y=500 graphic="title/go_to_start_off.gif" enterimg="title/go_to_start_on.gif" target="gamestart"
 
 ;「解説」ボタン
-@button x=450 y=530 graphic="title/button_commentary.jpg" enterimg="title/button_commentary.jpg" target="commentary"
+@button x=500 y=600 graphic="title/go_to_commentary_off.gif" enterimg="title/go_to_commentary_on.gif" target="commentary"
 
 [s]
 
