@@ -185,7 +185,7 @@ _　この喜びをさっそくチームメンバーと共有しよう。[l][r]
 
 [cm]
 
-@eval exp="sf.end05=true"
+@eval exp="sf.end04=true"
 @chara_hide_all
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"

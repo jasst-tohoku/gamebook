@@ -109,7 +109,7 @@ _　今回は自動化できなかったテストケースもあるし、モデ�
 
 [cm]
 
-@eval exp="sf.end04=true"
+@eval exp="sf.end03=true"
 @chara_hide_all
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"

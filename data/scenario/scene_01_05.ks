@@ -75,7 +75,7 @@ _　これからも、自動テストをうまく使って、開発を進めて�
 
 [cm]
 
-@eval exp="sf.end02=true"
+@eval exp="sf.end01=true"
 @chara_hide_all
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"

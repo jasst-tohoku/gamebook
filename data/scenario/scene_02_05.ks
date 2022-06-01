@@ -139,7 +139,7 @@ _　今回、良い製品が開発できるように向き合ったのは、結�
 
 [cm]
 
-@eval exp="sf.end03=true"
+@eval exp="sf.end02=true"
 @chara_hide_all
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"
