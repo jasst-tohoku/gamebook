@@ -12,13 +12,13 @@
 
 *start
 ;「まえがき」ボタン
-@button x=500 y=400 graphic="title/go_to_foreword_off.gif" enterimg="title/go_to_foreword_on.gif" target="foreword"
+@button x=500 y=400 graphic="button/go_to_foreword_off.gif" enterimg="button/go_to_foreword_on.gif" target="foreword"
 
 ;「はじめから」ボタン
-@button x=500 y=500 graphic="title/go_to_start_off.gif" enterimg="title/go_to_start_on.gif" target="gamestart"
+@button x=500 y=500 graphic="button/go_to_start_off.gif" enterimg="button/go_to_start_on.gif" target="gamestart"
 
 ;「解説」ボタン
-@button x=500 y=600 graphic="title/go_to_commentary_off.gif" enterimg="title/go_to_commentary_on.gif" target="commentary"
+@button x=500 y=600 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="commentary"
 
 [s]
 
