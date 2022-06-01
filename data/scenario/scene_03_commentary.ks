@@ -16,7 +16,10 @@ _　さて、どのテストを自動化しよう。[r]
 [font color="0xffd700"]Ｃ）リグレッションテストの内容はほぼ同じなのに、毎回テスト実行に時間がかかっている。リグレッションテストを自動化する。[resetfont][r]
 [font color="0xffd700"]Ｄ）どのテストかは関係ない。すべてのテストを自動化する。[resetfont][r]
 [endnowait]
-[l]
+@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
+@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
+[s]
+
 
 *answer1
 [cm]
@@ -32,7 +35,10 @@ _　さて、どのテストを自動化しよう。[r]
 また、『テスト技術者資格制度Advanced Level シラバス テスト自動化エンジニア』の6.2.4では「回帰テストは、自動化を使用する絶好の機会である。」と明記されており、回帰テストを自動化するときに必要な手順も詳細に記載されています。[r]
 （引用：テスト技術者資格制度Advanced Level シラバス テスト自動化エンジニア）[r]
 [endnowait]
-[l]
+@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
+@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+[s]
+
 
 *choice2
 [cm]
@@ -46,7 +52,11 @@ _　さて、どのくらい自動化しよう。[r]
 [font color="0xffd700"]Ａ）手動テストを無くさないと効果が薄い。リグレッションテストをすべて自動化する。[resetfont][r]
 [font color="0xffd700"]Ｂ）できる範囲を見極めて、早く効果を出したい。できるところを自動化する。[resetfont][r]
 [endnowait]
-[l]
+@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
+@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
+@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
+[s]
+
 
 *answer2
 [cm]
@@ -59,23 +69,28 @@ _　さて、どのくらい自動化しよう。[r]
 いずれにせよ、自動化を始める前にテストケースを一度確認して、自動化の制限に引っかかるものがないかどうか、確認しておきましょう。[r]
 （引用：テスト技術者資格制度Advanced Level シラバス テスト自動化エンジニア）[r]
 [endnowait]
-[l]
+@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
+@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+[s]
+
 
 *choice3
 [cm]
 [nowait]
 @chara_show name="main"
-@chara_show name="manager"
 「システムテストを自動化するんだね。自動テストが構築できたら手動テストの工数はゼロになるよね。初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[r]
 _　部長は年次の工数計画を確認している。[r]
-@chara_hide name="manager"
 _　なんの工数を計上してもらおうか。[r]
 [r]
 [font color="0xffd700"]Ａ）部長の言う通りの工数を計上してもらう。[resetfont][r]
 [font color="0xffd700"]Ｂ）自動テストの実装工数を計算しなおして計上してもらう。[resetfont][r]
 [font color="0xffd700"]Ｃ）自動テストの実装工数のほかに、保守や運用の工数も計上してもらう。[resetfont][r]
 [endnowait]
-[l]
+@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
+@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
+@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4"
+[s]
+
 
 *answer3
 [cm]
@@ -83,14 +98,16 @@ _　なんの工数を計上してもらおうか。[r]
 @chara_hide_all
 
 ＜解説＞[r]
-テスト自動化には、初期コストだけではなく固定費もかかります。[r]
+テスト自動化には、初期コストだけではなく固定費もかかります。[l][r]
+[cm]
 初期コスト[r]
 ・目的と目標を満たすためのツール要件の定義[r]
 ・適切なツールとツールベンダーの評価および選択[r]
 ・ツールの購入、適用、または開発[r]
 ・ツールの初期トレーニングの実行[r]
 ・他のツールとの統合[r]
-・ツールをサポートするために必要なハードウェア／ソフトウェアの購入[r]
+・ツールをサポートするために必要なハードウェア／ソフトウェアの購入[l][r]
+[cm]
 固定費[r]
 ・ツール所有コスト[r]
 ・ライセンス料金およびサポート料金[r]
@@ -102,7 +119,10 @@ _　なんの工数を計上してもらおうか。[r]
 ・選択したツールを最適に使用できるようにするための品質とプロセスの改善[r]
 （引用：テスト技術者資格制度Advanced Level シラバス 日本語版 テストマネージャ）[r]
 [endnowait]
-[l]
+@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
+@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+[s]
+
 
 *choice4
 [cm]
@@ -120,7 +140,11 @@ _　部長にどう報告しようか……[r]
 [font color="0xffd700"]Ｂ）工数削減の効果が出るのに時間がかかるので、別の効果がないか検討する。[resetfont][r]
 [font color="0xffd700"]Ｃ）工数削減の効果が出るのに時間がかかるので、自動化は取りやめる報告をする。[resetfont][r]
 [endnowait]
-[l]
+@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
+@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4"
+@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
+[s]
+
 
 *answer4
 [cm]
@@ -133,7 +157,10 @@ _　部長にどう報告しようか……[r]
 テスト自動化には、繰り返し型開発におけるセーフティネットとしての役割や、バグ修正日数の低減、影響範囲レビュープロセスの代替、といった、開発アクティビティへの効用も存在するため、冒頭にあげたひどく限定された局面を狙うより勝ち目があるかもしれない。[r]
 （引用：テスト自動化研究会 テスト自動化の8原則）[r]
 [endnowait]
-[l]
+@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4"
+@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+[s]
+
 
 *choice5
 [cm]
@@ -151,7 +178,10 @@ _　さて、打ち合わせには誰を呼ぼうか。 [r]
 [font color="0xffd700"]Ｂ）プロジェクト全体にかかわるので、テスト担当者の他にPMと開発者を呼ぶ。[resetfont][r]
 [font color="0xffd700"]Ｃ）課はまたぐが、インフラ担当者も呼ぶ。[resetfont][r]
 [endnowait]
-[l]
+@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4"
+@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+[s]
+
 
 *answer5
 [cm]
@@ -162,11 +192,10 @@ _　さて、打ち合わせには誰を呼ぼうか。 [r]
 テスト自動化と対象ソフトウェアの技術やプロセスは親和性を高める必要があります。ソフトウェア品質に関するフィードバックを迅速におこなうためには、ソフトウェア開発に携わる開発者やインフラ担当者の協力が不可欠です。チームの親和性があると、お互いの要件や設計および開発の成果物のレビュー、問題についての議論、互換性のあるソリューションの発見お互いのコミュニケーションや対話の際にも役立ちます。[r]
 （引用：テスト技術者資格制度Advanced Level シラバス テスト自動化エンジニア）[r]
 [endnowait]
-[l]
-
-[r]
-[font color="0xffd700"][link target="*commentary"]解説の目次にもどる[endlink][resetfont][r]
+@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
+@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
+
 
 *commentary
 @jump storage="commentary.ks"
