@@ -23,6 +23,8 @@ _　スコープも定まったし、部長に報告だ。[l][r]
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
 @chara_show name="manager"
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 「システムテストを自動化するんだね。自動テストが構築できたら手動テストの工数はゼロになるよね。初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
 _　部長は年次の工数計画を確認している。[l][r]
@@ -42,8 +44,11 @@ _　なんの工数を計上してもらおうか。[l][r]
 
 [font color="0xffd700"]Ａ）部長の言う通りの工数を計上してもらう。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　手動テストと同じ工数では、使用するテストツールの選定までしか終わらなかった。[l][r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　部長からはなぜ何もできていないんだと詰められ、これからは毎回手動で実施することになった。[l][r]
 
 [cm]
@@ -61,8 +66,11 @@ _　部長からはなぜ何もできていないんだと詰められ、これ�
 
 [font color="0xffd700"]Ｂ）自動テストの実装工数を計算しなおして計上してもらう。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　自動テスト担当者は今回使おうとしているツールを使ったことがなかったよう。実装する時間に追われて、保守が難しいテストコードがつくられてしまった。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　最終的にはリグレッションテストを楽にするために自動化したのに、手動テスト工数以上の保守工数がかかってしまっている。[l][r]
 
 [cm]

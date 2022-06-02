@@ -17,6 +17,9 @@
 ;メッセージウィンドウの表示
 @layopt layer="message0" visible=true
 
+;BGMの再生
+@playbgm storage="commentary.ogg"
+
 [font size=45]解説[resetfont][l][r]
 [r]
 [nowait]
@@ -68,5 +71,6 @@ HAPPY ENDを達成すると閲覧できます[r]
 [s]
 
 *goToTitle
+@stopbgm
 @jump storage=title.ks
 [s]

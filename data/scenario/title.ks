@@ -6,6 +6,7 @@
 @hidemenubutton
 @layopt layer="message0" visible=false
 @clearstack
+@stopbgm
 
 [if exp="sf.end01==true && sf.end02==true && sf.end03==true && sf.end04==true"]
   @bg storage="white.jpg" time=500

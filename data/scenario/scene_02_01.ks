@@ -7,6 +7,7 @@
 
 *start
 @chara_hide_all
+@playbgm storage="scene.ogg"
 
 [cm]
 
@@ -75,6 +76,8 @@ _　評価環境は１台しかない評価機のことであり、評価環境�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　自動化の以前にどうテストしていこう？[l][r]
 [r]
@@ -101,6 +104,7 @@ _　…………[l][r]
 
 「それで、今出ている不具合はどのくらいで修正できそうなの？」[l][r]
 [r]
+@fadeoutbgm
 @chara_show name="manager"
 _　部長から聞かれているが、わたしはとても答えられなかった。[l][r]
 _　本番機が来てからテストを始めたが、不具合ばかりだった。不具合が多すぎて、まともにテストが実行しきれなかったくらいだ。[l][r]
@@ -116,6 +120,9 @@ _　わたしの答えになっていない回答を聞いて頭を抱えてい�
 _　リリースは延期する方向で進めているらしい。[l][r]
 _　わたしたちの担当範囲も別チームで作り直す方向で進めるらしい。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　部長からは会社の責任であり、個人で抱え込まないように言われたが、プロジェクト開始時にあったわたしの自信は今はもう無くなってしまった。[l][r]
 
 [cm]
@@ -144,6 +151,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 「みなさんが何を根拠に『機能を実装した』としているのか、教えてくださいよ！」[l][r]
 [r]
 @chara_show name="leader"
@@ -161,6 +169,9 @@ _　今日もデグレについて何度説明しに行ったか……」[l][r]
 [r]
 @chara_hide name="leader"
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　テストは１人、実装が４人の体制で進めている。彼がテストするよりも実装が先行することを想定してはいた。[l][r]
 _　これまでは実装は計画どおりに進んでいたが、最近は不具合の対応で予定していた機能実装が進んでいない、という話も増えてきた。[l][r]
 _　テストを並列実行しているから実装完了後の不具合修正期間は短めに見ていたが、見通しが甘かったかもしれないなぁ……。[l][r]

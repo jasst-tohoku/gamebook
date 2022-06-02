@@ -29,6 +29,8 @@ _　部長から工数の承認も得たし、実現に向けて準備を進め�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　テスト自動化担当と関係者を呼んで、自動テスト構築について打ち合わせよう。アジェンダはこんなところか。[l][r]
 _　・自動テストの実行タイミング[r]
@@ -49,10 +51,13 @@ _　さて、打ち合わせには誰を呼ぼうか。 [l][r]
 
 [font color="0xffd700"]Ａ）テストのことなので、テスト担当者だけで話し合う。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　どういうテストをすればいいかは分かるが、上手くテストが実装できない。何とか作ったものの、実は開発側でも同じようなテストコードを書いていた。自分達のテストコードよりよっぽどしっかりしている。[l][r]
 _　テスト自動化には「テストを作る力」と「自動化する力」の二つが必要だったんだ。[l][r]
 [r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　PMから勝手にテスト自動化を進めたことにも不信感を持たれ、テスト自動化の実装に暗雲が漂ってきた。[l][r]
 
 [cm]
@@ -69,9 +74,12 @@ _　PMから勝手にテスト自動化を進めたことにも不信感を持�
 
 [font color="0xffd700"]Ｂ）プロジェクト全体にかかわるので、テスト担当者の他にPMと開発者を呼ぶ。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　スケジュールもPMに相談し、開発と協力しながら、テストコードが動くところまでできた。よし、行けそうだ！　と思ったのも束の間、安定して動作する環境がないことに気がついた。[l][r]
 _　自動テストを安定して動かすハードウェアの納入には、半導体不足の影響で時間がかかるらしい。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　PMからは、これ以上のスケジュール調整はできないと言われた。今回は、テスト自動化を諦めるしかないのか……。[l][r]
 
 [cm]
@@ -101,6 +109,7 @@ _　すでに開発者が構築していた自動テストと連携できたた�
 [cm]
 
 @chara_show name="manager"
+@fadeinbgm storage="happy_end.ogg" time=1000
 「ジャスペイ開発プロジェクトは、テストプロセスやテストサイクルが更にうまく回るようになったな。会社のモデルプロジェクトにするために、まだ課題は残っているかね」[l][r]
 [r]
 _　なんだ。部長はコスト削減と言いながらも、社内のモデルプロジェクトを作りたかったのか。[l][r]

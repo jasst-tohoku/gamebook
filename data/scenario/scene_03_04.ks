@@ -34,6 +34,8 @@ _　テストを自動化するのに160時間、１回のテスト実行と保�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 手動テストの実施工数：20時間[r]
 テスト自動化実装工数：160時間[r]
@@ -55,9 +57,12 @@ _　部長にどう報告しようか……[l][r]
 
 [font color="0xffd700"]Ａ）工数削減に2年半以上かかるのは事実なので、部長にこのまま報告する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　現状の費用対効果だけでは部長は納得しなかった。[l][r]
 _　工数削減以外にも様々な効果があったのに、そこを考える必要があったのだ。そもそもリグレッションテストだって、リリース前だけじゃなくて、コミット毎に実施してもいいじゃないか！[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　気付いたときには時すでに遅し。[l][r]
 _　部長は自動化に悪いイメージを持ってしまって、説得が難しくなってしまった。[l][r]
 
@@ -80,8 +85,11 @@ _　部長は自動化に悪いイメージを持ってしまって、説得が�
 
 [font color="0xffd700"]Ｃ）工数削減の効果が出るのに時間がかかるので、自動化は取りやめる報告をする。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　いつまで経っても自動化は進まない。もちろんスキルも上がらない。[l][r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　新しいブランチができるたびにリグレッションテストの回数は増えていく。[l][r]
 
 [cm]

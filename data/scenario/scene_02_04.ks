@@ -56,6 +56,8 @@ _　プログラムを試作機上で動作させるためには評価環境よ�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　開発環境や評価環境での従来の自動テスト資産は十分にある。[l][r]
 _　これらをどうやって活かそうか。[l][r]
@@ -84,11 +86,15 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 「ロジックのミスは無いと思ってますが、そういわれると自信が無いなぁ。コード見返してみますね」[l][r]
 [r]
 _　試作機テストの不具合調査をチームで行っているが、歯切れのよい結論が出てこない。[l][r]
 _　これまで試作機で出てきた不具合には、ハードウェア仕様をこちらで把握しきれていなかったり、ハードウェアが原因だったりしたが、先日はソフトウェアの単純なロジックミスもあったりした。そのときはハードウェア部門から苦言を聞いたっけ。[l][r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　試作機テストの不具合調査がこんなに難しいのは想定し切れていなかった。これでは本番機までに不具合を挙げきるのは無理そうだ。[l][r]
 
 [cm]
@@ -122,6 +128,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 「って感じですけど、何か質問ありますか？」[l][r]
 [r]
 @chara_show name="qa"
@@ -140,6 +147,9 @@ _　みなさんは試作機が動かせることを最優先でお願いしま�
 [r]
 @chara_hide name="qa"
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　その試作機だって予定通りに来なかったじゃないか。と言いたくなったが、場の空気が悪くなるだけだと思ったのでグッと堪えた。泣きたくなる気持ちを抑えて頷くだけだった。[l][r]
 
 [cm]

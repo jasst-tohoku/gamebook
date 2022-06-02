@@ -38,6 +38,8 @@ _　ハードウェア部門に訪ねれば現時点の仕様は聞けそうだ�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　どうやってテストの自動化を進めようか。[l][r]
 [r]
@@ -63,7 +65,7 @@ _　…………[l][r]
 
 
 [cm]
-
+@fadeoutbgm
 「そういえば、さっきのミーティングで試作機についてトラブルが起きてるっぽくてな……」[l][r]
 [r]
 @chara_show name="manager"
@@ -90,6 +92,9 @@ _　それに期待するのはさすがに楽観視しすぎだろう。[l][r]
 _　今回みたいな問題はわたしの力では解決は難しいだろう。[l][r]
 _　テスト自動化をいろいろ試すことはできたが、解決できるものとできないものがある。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　結局リリースは後ろ倒しになったが、わたしはよくやった方だと思う。[l][r]
 
 [cm]
@@ -117,6 +122,8 @@ _　シミュレーターの開発には多くの工数が必要だが、あれ�
 *choice2
 [cm]
 @chara_mod name="main" face="default"
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　シミュレーターを作るにはハードウェアの仕様を把握する必要があるが、PRJ初期の現時点ではハードウェアの使用は不明確だ。[l][r]
 _　どうやってシミュレーターを作った方がいいだろうか。[l][r]
@@ -132,9 +139,12 @@ _　どうやってシミュレーターを作った方がいいだろうか。[
 
 [font color="0xffd700"]Ａ）機能が同等のシミュレーターがあれば、試作機や本番機が1台しかない問題も解決する。仕様が確定したところから順次シミュレータープログラムを作成する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 「で、シミュレータープログラムの作成に集中しすぎて、作るべき機能実装が遅れてしまった、と」[l][r]
 [r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　思ったよりハードウェアの仕様が複雑で、シミュレータープログラムの作成工数が膨らんでしまった。仕様確定も遅れていたが、シミュレーターに工数を取られて機能実装もできなかった。[l][r]
 
 [cm]
@@ -142,7 +152,7 @@ _　思ったよりハードウェアの仕様が複雑で、シミュレータ�
 @layopt layer="message0" visible=false
 @bg storage="bad_end.jpg" time=2000 method="fadeIn"
 [l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
 @button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
@@ -152,9 +162,12 @@ _　思ったよりハードウェアの仕様が複雑で、シミュレータ�
 
 [font color="0xffd700"]Ｂ）シミュレーターはできるだけ早く合った方が良い。仕様を類推してシミュレータープログラムを作成する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 「で、シミュレーターはあまり使い物にならなかった、と」[l][r]
 [r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　ハードウェアで確定していない仕様は類推して、シミュレータープログラムを作成してテストに利用していたが、試作機を使ってのテストで動作の乖離が多く見つかった。[l][r]
 _　結局シミュレーターで問題ない、としていた機能もほとんど見直すことになった。作ったシミュレーターは今はお払い箱になってしまった。[l][r]
 
@@ -163,6 +176,6 @@ _　結局シミュレーターで問題ない、としていた機能もほと�
 @layopt layer="message0" visible=false
 @bg storage="bad_end.jpg" time=2000 method="fadeIn"
 [l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
 @button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]

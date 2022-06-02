@@ -70,6 +70,8 @@ _　こんなに教えてくれるなんて、この人は先生かな？　テ�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　さて、借りてきた書籍もひととおり目を通したし、単体テストの完了条件を決めよう。[l][r]
 _　ブラックボックステスト技法は実装内部に着目せず、入出力が仕様に合うかに着目したものだ。対して、ホワイトボックステスト技法は実装内部に着目したものだ。[l][r]
@@ -97,6 +99,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 @chara_show name="qa"
 「こんな感じで仕様だとエラーを返さないといけないはずなんだけど、今はそのまま正常だって返してるんだよね」[l][r]
 [r]
@@ -115,6 +118,8 @@ _　過去のプロジェクトが結構大変だったのに対して、今回�
 [r]
 _　とはいえ、もっとうまく実装できた気もしている。何が良くなかったんだろうか。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　できればゆっくりと振り返りをしたいところだけど、これから、チームメンバーに残業が続くことを説得しなきゃ……。[l][r]
 
 [cm]
@@ -141,6 +146,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 @chara_show name="qa"
 「こんな感じの値を入力すると、無限ループになっちゃうんだよね」[l][r]
 [r]

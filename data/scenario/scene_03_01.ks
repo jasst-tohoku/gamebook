@@ -6,6 +6,7 @@
 
 *start
 @chara_hide_all
+@playbgm storage="scene.ogg"
 
 [cm]
 
@@ -37,6 +38,8 @@ _　最近実施したテスト仕様を見せてもらったが、適切にテ�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　さて、どのテストを自動化しよう。[l][r]
 
@@ -54,9 +57,13 @@ _　さて、どのテストを自動化しよう。[l][r]
 
 [font color="0xffd700"]Ａ）新しく開発した機能のテストは優先度も高く、テストに時間がかかっている。追加機能のテストを自動化する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　追加機能のテストを自動化したが、工数が膨れ上がってしまった。[l][r]
 _　これを毎回自動化するのは割に合わない。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　と思っていたら部長から「そんな暇あったら手動でテストしてください！」とお達しが来てしまった。[l][r]
 
 [cm]
@@ -79,7 +86,11 @@ _　その専属チームでは探索部分にAIの導入を検討している�
 [r]
 _　——１年後——[l][r]
 [r]
+@fadeoutbgm
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　既に１年が経過したが、何の成果も得られていない。[l][r]
 
 [cm]
@@ -102,8 +113,11 @@ _　既に１年が経過したが、何の成果も得られていない。[l][
 
 [font color="0xffd700"]Ｄ）どのテストかは関係ない。すべてのテストを自動化する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　追加機能のテストを何とか自動化しようと四苦八苦しているときに開発側から「もうその案件のテストは手動で終わってるよ」と言われ心が折れた。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　全てを自動化は聞こえがいいけど、今の自分達の技術力では無理だった。狙いを絞るべきだった。[l][r]
 
 [cm]

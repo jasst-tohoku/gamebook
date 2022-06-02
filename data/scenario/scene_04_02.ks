@@ -29,6 +29,8 @@ _　リファクタリングは、やった方がいいって開発が上手い�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　開発プロセス上は、実装前に基本設計するフェーズがあるけど、毎回レビューでの指摘が多くって、いまだに設計が上手くできる自信がないんだよね。[l][r]
 _　リファクタリングで設計を向上できるテスト駆動開発だったら、もしかして、開発プロセスでの設計の役割が変えられるかもしれない？[l][r]
@@ -85,6 +87,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 @chara_show name="leader"
 「結合して動かして分かったんですが、これらの処理時間が期待に対して、とても遅くなっているんですよ。[l][r]
 _　今からこれを直すにも、並列処理に適した構造になっていないところから手を付けるので、結構時間がかかっちゃいますね……」[l][r]
@@ -98,6 +101,8 @@ _　テストを書いて、リファクタリングで解決できると思っ�
 _　大規模な修正が必要になりそうで、先行できた計画の余裕が無くなり、むしろ納期に間に合うかの不安が出てきてしまった。[l][r]
 [r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　部長のいう通りになってしまった。[l][r]
 _　あのとき、部長がしっかり止めてくれれば違ったはずなのになぁ……。[l][r]
 

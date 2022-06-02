@@ -6,7 +6,7 @@
 
 *start
 @chara_hide_all
-
+@playbgm storage="scene.ogg"
 [cm]
 
 @chara_show name="main"
@@ -34,6 +34,8 @@ _　今回は入念にリグレッションテストをしておいてほしい�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　システムテストの自動化だって？[l][r]
 _　そんなものはこれまでの開発者人生の中で経験がなかった。[l][r]
@@ -64,6 +66,7 @@ _　早速先方の営業に連絡を入れておこう。[l][r]
 
 [cm]
 
+@fadeoutbgm
 _　システムテストを行う段階になって、メンバーが私のところに来た。[l][r]
 [r]
 「PMさん、大変です！」[l][r]
@@ -72,6 +75,8 @@ _　外注先のテスターに任せておいた自動テストが、全く機�
 _　彼らにはテスト自動化の経験がなく、スコープや粒度がバラバラでまともに通しで動かない自動テストが積み上がっているようだ。[l][r]
 [r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　これから自動テストを直していたのでは間に合わない、今回も全て手動でなんとかするしかない……。[l][r]
 _　ああ、部長が見たことのないような顔でこちらに歩いてくるのが見える。[l][r]
 
@@ -97,6 +102,7 @@ _　私は腹をくくって、テスト自動化も行うことにした。[l][
 
 [cm]
 
+@fadeoutbgm
 _　プロジェクトマネジメントとテスト自動化担当、両立できると思っていたのだが……。[l][r]
 [r]
 「PMさん、自動テストツールの使い方がよくわからなくて……」[l][r]
@@ -104,6 +110,8 @@ _　プロジェクトマネジメントとテスト自動化担当、両立で�
 「PM君、遅延が発生しているようだが大丈夫かね？」[l][r]
 [r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　プロジェクトが遅れているのをなんとかしなければならず、テスト自動化に割く時間がほとんど取れていない。[l][r]
 _　自動テストの実装も進まず、このままではテストも間に合わず予定通りのリリースができない可能性が高い……。[l][r]
 

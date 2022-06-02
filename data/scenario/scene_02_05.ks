@@ -19,6 +19,8 @@ _　そういったときにこれまでのテスト資産を使って共通部�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　あとは、評価環境では無い機能に対して作ったモックオブジェクトをどうするかだ。[l][r]
 _　実装ではモックオブジェクトは本来必要な機能を実装したものに置き換えるのだが……[l][r]
@@ -44,6 +46,7 @@ _　…………[l][r]
 
 [cm]
 
+@fadeoutbgm
 @chara_show name="manager"
 「……つまり、本番機でもハードウェア不具合が残ってて、それをソフトウェアで吸収できるようにしてほしいんだって」[l][r]
 [r]
@@ -58,6 +61,8 @@ _　報告はしていたが、結局そのまま行くことになったのか�
 _　見積もりは問題なくできそうだ。原因が分からない不具合を回避するにはどうすればいいかは、ずっと考えていた。[l][r]
 _　ただ、回避策は複雑な実装が必要そうだ。正直、リリース間際でやりたい作業ではない。また、残業や休日出勤も覚悟しておかないといけなそうだ。[l][r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　わたしは返事をしたが、疲れを隠すことができなかった。[l][r]
 
 [cm]
@@ -81,6 +86,8 @@ _　今ある評価環境のテスト資産を試作機に適合させる対応�
 _　…………[l][r]
 
 [cm]
+
+@fadeoutbgm
 @chara_show name="qa"
 「この機能なんだけど、試作機が延期するときに仕様変更が入っているの。この実装は古い仕様を元にしているみたい」[l][r]
 [r]
@@ -96,6 +103,8 @@ _　暗に、もっとしっかり作れ、と言われている……。[l][r]
 [r]
 @chara_hide name="qa"
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　結構な数の不具合があるから、調査をするにも骨が折れる。とりあえず、仕様変更ミスのものは除外して原因調査しよう。[l][r]
 _　これは残業や休日出勤しないと一通りの調査は間に合わないかもしれないな……。[l][r]
 
@@ -130,6 +139,8 @@ _　確かに、本番機にも不具合が残っていたらソフトウェア�
 
 [cm]
 
+@fadeoutbgm
+@fadeinbgm storage="happy_end.ogg" time=1000
 「QA部門もあとで意見交換させてくれ、って言っていたから落ち着いたら今回の活動内容をまとめておいてくれると助かるよ。[l][r]
 _　あと、今回のテスト自動化の取り組み、社内事例として発表する準備をしているから、そっちも協力してね」[l][r]
 [r]

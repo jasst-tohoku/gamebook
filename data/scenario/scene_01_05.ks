@@ -11,6 +11,8 @@
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　そしてある日……私は部長に呼び出された。[l][r]
 _　“お褒めのことば”でもくれるのだろうか。[l][r]
@@ -43,12 +45,15 @@ _　これでみんなハッピーエンドだ。[l][r]
 
 [cm]
 
+@fadeoutbgm
 _　ところがこの考えが間違いだった。[l][r]
 [r]
 _　テストリーダーが自動化担当を離れてしばらくして、軽微な仕様変更や機能追加、バグの改修などのタイミングで自動テストが動かないことが増えてきた。[l][r]
 _　その都度メンテナンスを試みたものの、誰もメンテナンスができない。[l][r]
 [r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　そして苦労して作った自動テストは使われなくなり、以降リリースのたびにデグレが発生する状況になってしまった。[l][r]
 
 [cm]
@@ -70,6 +75,8 @@ _　私は部長に、テスト自動化は「ここまでやれば終わり」�
 [r]
 「そうか、君がそう言うならわかったよ……」[l][r]
 [r]
+@fadeoutbgm
+@fadeinbgm storage="happy_end.ogg" time=1000
 _　部長は完全に納得したわけではなさそうだったが、一応聞き入れてくれたようだ。[l][r]
 _　これからも、自動テストをうまく使って、開発を進めていこう。[l][r]
 

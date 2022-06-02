@@ -18,6 +18,8 @@ _　今回はテストリーダーが検討していたツールを使うこと�
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　その後、順調にテスト自動化が進んでいるように見えたものの……。[l][r]
 [r]
@@ -43,9 +45,12 @@ _　どう対応しようか。[l][r]
 
 [font color="0xffd700"]Ａ）諦めて全て手動で実行する。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　こうなっては仕方がない。[l][r]
 _　テストケースを全て手動で実行することにした。[l][r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　リグレッションテストの実行に膨大な工数がかかるようになり、充分なテストが行われず、バージョンアップを行うたびにデグレードが発生する状態になってしまった。[l][r]
 
 [cm]
@@ -63,11 +68,14 @@ _　リグレッションテストの実行に膨大な工数がかかるよう�
 
 [font color="0xffd700"]Ｂ）開発者に、代わりに自動テストを書いてもらう。[resetfont][l][r]
 [r]
+@fadeoutbgm
 _　こうなっては仕方がない。プログラムを書くなら、開発者のほうが適任だろう。彼らの力を借りよう。[l][r]
 [r]
 _　開発者に自動テストを書き始めてもらったが、環境が変わるとうまく動作しない問題は解決できず。[l][r]
 _　開発者からも「自分の書いたコードには問題がない。環境のせいだ」と言われてしまった。[l][r]
 @chara_mod name="main" face="down"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
 _　信頼できる自動テストは、ついに実現できなかった。[l][r]
 
 [cm]

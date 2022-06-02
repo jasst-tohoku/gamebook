@@ -23,6 +23,8 @@ _　うん、計画初期のテスト方針は良さそうだ。[l][r]
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
 @layopt layer="message0" visible=true
+@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
+@eval exp="tf.fromEnd=false"
 
 _　テストを自動化するにあたって、テストケースを設計し、テスト実行環境を用意し、テストコードを書いていく。[l][r]
 _　しかし、開発環境と評価環境が違うんだ。テストケースやテスト実行環境、テストコードにも環境の違いが出てくるはずだ。最初は共通のものでいいと思っていたけど、環境ごとに分けなければいけないところもあるはずだ。[l][r]
@@ -50,9 +52,8 @@ _　テストの自動化は初めてなのだから、あまり難しいこと�
 [r]
 _　…………[l][r]
 
-
 [cm]
-
+@fadeoutbgm
 @chara_show name="qa"
 「じゃあ、ミーティングの参加お願いね」[l][r]
 [r]
@@ -67,6 +68,9 @@ _　開発環境のテストスクリプトを修正してから、コピーで�
 _　仕様変更が入ると開発環境と評価環境それぞれのテスト資産を修正しなければならない。修正場所をコピーすればいいと思っていたが、微妙な差異があってコピーミスすることが珍しくない。想定以上に修正コストが多くかかっている。[l][r]
 [r]
 @chara_mod name="main" face="orz"
+@playbgm storage="bad_end.ogg"
+@eval exp="tf.fromEnd=true"
+
 _　この先、試作機や本番機がくるのであれば、テスト資産が更に増えることになる。ますます管理が難しくなることを思えば、どれかのテスト資産の更新を止める必要があるかもしれない。なかなかうまく行かないなぁ……。[l][r]
 
 [cm]
