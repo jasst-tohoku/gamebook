@@ -162,12 +162,12 @@ _　心配しなくても良くできてる、と言われている。が、も�
 
 [cm]
 
-[font color="0xffd700" bold=true]END[resetfont][l][r]
-[r]
-[nowait]
-[font color="0xffd700"][link target="*choice"]選択肢へ戻る[endlink][resetfont][r]
-[font color="0xffd700"][link target="*goToTitle"]タイトルへ戻る[endlink][resetfont]
-[endnowait]
+@chara_hide_all
+@layopt layer="message0" visible=false
+@bg storage="end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 
 

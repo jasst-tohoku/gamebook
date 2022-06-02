@@ -6,8 +6,14 @@
 @hidemenubutton
 @layopt layer="message0" visible=false
 @clearstack
-@bg storage="black.jpg" time=500
-@bg storage="title.jpg" time=100
+
+[if exp="sf.end01==true && sf.end02==true && sf.end03==true && sf.end04==true"]
+  @bg storage="white.jpg" time=500
+  @bg storage="title_after.jpg" time=100
+[else]
+  @bg storage="black.jpg" time=500
+  @bg storage="title.jpg" time=100
+[endif]
 @wait time=200
 
 *start
