@@ -6,6 +6,11 @@
 
 
 *start
+
+;表を下部に表示するとき用のメッセージレイヤ
+@position layer="message1" page="fore" left=90 top=5 width=1100 height=470 visible=false
+@position layer="message1" page="fore" margint=10 marginl=50 marginr=70 marginb=30
+
 @chara_hide_all
 @playbgm storage="scene.ogg"
 
@@ -22,7 +27,10 @@ _　先日行われたキックオフミーティングで計画を説明され�
 
 [cm]
 
-@image layer=1 storage=table_02_01.png visible=true top=480 left=95
+@layopt layer="message0" visible=false
+@layopt layer="message1" visible=true
+@current layer="message1"
+@image layer=1 storage="table_02_01.png" visible=true top=480 left=95
 
 _　ハードウェアとソフトウェアは並列で開発するようだ。[l][r]
 _　試作機はPRJ後期、本番機はPRJ終盤の完成になるようで、それまでは試作機や本番機と同じCPUアーキテクチャの評価機が用意されるそうだ。[l][r]
@@ -38,6 +46,10 @@ _　後期以降は試作機や本番機のテストや改修作業に効率が�
 [cm]
 
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
+
 
 _　キックオフミーティングの後に部長に相談するとこう言われた。[l][r]
 [r]
@@ -64,6 +76,9 @@ _　じゃあ、テスト自動化の方針を考えてみようか。[l][r]
 @chara_hide name="manager"
 [cm]
 
+@layopt layer="message0" visible=false
+@layopt layer="message1" visible=true
+@current layer="message1"
 @layopt layer=1 visible=true
 
 _　とはいえ、計画初期は開発環境と評価環境というアーキテクチャの異なる環境で進めていく必要がある。[l][r]
@@ -75,7 +90,9 @@ _　評価環境は１台しかない評価機のことであり、評価環境�
 [cm]
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
+@layopt layer="message1" visible=true
+@current layer="message1"
+@layopt layer=1 visible=true
 @playbgm storage="scene.ogg" cond="tf.fromEnd==true"
 @eval exp="tf.fromEnd=false"
 
@@ -91,6 +108,10 @@ _　自動化の以前にどうテストしていこう？[l][r]
 
 *selectA
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
+
 [cm]
 
 [font color="0xffd700"]Ａ）計画初期にテストしても、どうせ本番環境でも似たテストをしなければならない。開発環境や評価環境ではテストはせず、本番機が来てから一気にテストを行う。[resetfont][l][r]
@@ -137,6 +158,10 @@ _　部長からは会社の責任であり、個人で抱え込まないよう�
 
 *selectB
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
+
 [cm]
 
 [font color="0xffd700"]Ｂ）アーキテクチャが異なる開発環境でテストしても意味がない。開発環境ではテストをしないで、評価環境でのみテストを行う。[resetfont][l][r]
@@ -188,5 +213,8 @@ _　テストを並列実行しているから実装完了後の不具合修正�
 
 *selectC
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
 @jump storage=scene_02_02.ks target=*start
 [s]

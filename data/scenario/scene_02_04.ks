@@ -29,6 +29,9 @@ _　…………[l][r]
 
 [cm]
 
+@layopt layer="message0" visible=false
+@layopt layer="message1" visible=true
+@current layer="message1"
 @layopt layer=1 visible=true
 @chara_show name="manager"
 「来週頭には試作機がくるけど、気になることはあるかな」[l][r]
@@ -55,7 +58,9 @@ _　プログラムを試作機上で動作させるためには評価環境よ�
 [cm]
 @bg storage="bg_main.jpg" time=100
 @chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
+@layopt layer="message1" visible=true
+@current layer="message1"
+@layopt layer=1 visible=true
 @playbgm storage="scene.ogg" cond="tf.fromEnd==true"
 @eval exp="tf.fromEnd=false"
 
@@ -72,6 +77,9 @@ _　これらをどうやって活かそうか。[l][r]
 
 *selectA
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
 
 [cm]
 
@@ -109,12 +117,18 @@ _　試作機テストの不具合調査がこんなに難しいのは想定し�
 
 *selectB
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
 @jump storage=scene_02_05.ks target=*start
 [s]
 
 
 *selectC
 @layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
 
 [cm]
 

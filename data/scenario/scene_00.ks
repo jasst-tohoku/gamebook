@@ -8,7 +8,7 @@
 @bg storage="white.jpg" time=1000
 
 ;メッセージウィンドウの設定
-@position layer="message0" left=90 top=5 width=1100 height=710 page=fore visible=true
+@position layer="message0" page="fore" left=90 top=5 width=1100 height=710 visible=true
 
 ;文字が表示される領域を調整
 @position layer="message0" page="fore" margint=10 marginl=50 marginr=70 marginb=30

@@ -26,7 +26,11 @@ _　２週間後、テストリーダーからトライアルの報告があっ�
 _　概要は以下のようなものだった。どちらのツールを使おうか。[l][r]
 @chara_hide name="leader"
 [r]
+@layopt layer="message0" visible=false
+@playse storage="se/se_paper.ogg"
 @image layer=2 storage=table_01.png visible=true top=170 left=150
+[l]
+@layopt layer="message0" visible=true
 [r]
 [r]
 [r]
