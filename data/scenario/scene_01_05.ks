@@ -19,9 +19,12 @@ _　“お褒めのことば”でもくれるのだろうか。[l][r]
 _　どうせくれるなら、臨時ボーナスでも貰いたいところだ。[l][r]
 [r]
 @chara_show name="manager"
+@playse storage="voice/scene_01_05/manager-01-05-01.ogg"
 「テスト自動化の導入を無事行うことができたようだな。[l][r]
+@playse storage="voice/scene_01_05/manager-01-05-02.ogg"
 _　テストカバレッジも増えたし、これでつまらんデグレが防げるだろう。よくやってくれた。[l][r]
-_　ところでテストチームについてだが、自動化できたわけだし、縮小してもかまわないな？　テストリーダーの彼も、別の業務にアサインしたいと思っていてね」[l][r]
+@playse storage="voice/scene_01_05/manager-01-05-03.ogg"
+_　ところでテストチームについてだが、自動化できたわけだし、縮小してもかまわないな？　[l][playse storage="voice/scene_01_05/manager-01-05-04.ogg"]テストリーダーの彼も、別の業務にアサインしたいと思っていてね」[l][r]
 [r]
 @chara_hide name="manager"
 [nowait]
@@ -73,6 +76,7 @@ _　そして苦労して作った自動テストは使われなくなり、以�
 @chara_show name="manager"
 _　私は部長に、テスト自動化は「ここまでやれば終わり」がなく、作った自動テストは継続的に保守運用が必要であることを説明した。[l][r]
 [r]
+@playse storage="voice/scene_01_05/manager-01-05-05.ogg"
 「そうか、君がそう言うならわかったよ……」[l][r]
 [r]
 @fadeoutbgm

@@ -32,8 +32,11 @@
 ;インフラ
 @chara_new name="infra" storage="chara/infra/infra_stand.png"
 
+;BGM設定
+@bgmopt volume=10
+
 ;メッセージボックスは非表示
-@layopt layer="message" visible=false
+@layopt layer="message0" visible=false
 
 ;最初は右下のメニューボタンを非表示にする
 @hidemenubutton

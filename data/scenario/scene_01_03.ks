@@ -23,14 +23,30 @@ _　一旦はテストリーダーからのトライアル報告を待つこと�
 
 _　２週間後、テストリーダーからトライアルの報告があった。[l][r]
 @chara_show name="leader"
-_　概要は以下のようなものだった。どちらのツールを使おうか。[l][r]
-@chara_hide name="leader"
+_　概要は以下のようなものだった。[l][r]
 [r]
 @layopt layer="message0" visible=false
 @playse storage="se/se_paper.ogg"
-@image layer=2 storage=table_01.png visible=true top=170 left=150
+@image layer=2 storage=table_01.png visible=true top=140 left=150
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-01.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-02.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-03.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-04.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-05.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-06.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-07.ogg"
+[l]
+@playse storage="voice/scene_01_03/leader-01-03-08.ogg"
 [l]
 @layopt layer="message0" visible=true
+@chara_hide name="leader"
 [r]
 [r]
 [r]
@@ -39,7 +55,7 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 [r]
 [r]
 [r]
-[r]
+_ どちらのツールを使おうか。[l][r]
 [nowait]
 [font color="0xffd700"][link target="*selectA"]Ａ）部長が薦めてきたツール[endlink][resetfont][r]
 [font color="0xffd700"][link target="*selectB"]Ｂ）テストリーダーが検討していたツール[endlink][resetfont][r]

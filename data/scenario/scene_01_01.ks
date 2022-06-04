@@ -23,9 +23,13 @@ _　既存の機能には大きな変更はないが、新たにいくつかの�
 _　ある日、上司である部長が私を呼び出した。[l][r]
 [r]
 @chara_show name="manager"
+@playse storage="voice/scene_01_01/manager-01-01-01.ogg"
 「君、今度のプロジェクトではテストを自動化して効率よく進めてくれたまえ。[l][r]
+@playse storage="voice/scene_01_01/manager-01-01-02.ogg"
 _　いつもシステムテストに時間がかかり過ぎているし、もっと工夫できる点があるだろう。[l][r]
+@playse storage="voice/scene_01_01/manager-01-01-03.ogg"
 _　それに、昨年の別製品ではメジャーバージョンアップ時にたくさんのデグレードが発生してユーザーの評判も悪かった。[l][r]
+@playse storage="voice/scene_01_01/manager-01-01-04.ogg"
 _　今回は入念にリグレッションテストをしておいてほしい」[l][r]
 @chara_hide name="manager"
 
@@ -37,7 +41,9 @@ _　今回は入念にリグレッションテストをしておいてほしい�
 @playbgm storage="scene.ogg" cond="tf.fromEnd==true"
 @eval exp="tf.fromEnd=false"
 
-_　システムテストの自動化だって？[l][r]
+@playse storage="voice/scene_01_01/main-01-01-01.ogg"
+「システムテストの自動化だって？」[l][r]
+[r]
 _　そんなものはこれまでの開発者人生の中で経験がなかった。[l][r]
 _　テストはほとんど外注先のテスターに任せていたので、自分では動作確認程度しかしてこなかった。[l][r]
 [r]
@@ -69,6 +75,7 @@ _　早速先方の営業に連絡を入れておこう。[l][r]
 @fadeoutbgm
 _　システムテストを行う段階になって、メンバーが私のところに来た。[l][r]
 [r]
+@playse storage="voice/scene_01_01/mob-01-01-01.ogg"
 「PMさん、大変です！」[l][r]
 [r]
 _　外注先のテスターに任せておいた自動テストが、全く機能していないらしい。[l][r]
@@ -105,8 +112,11 @@ _　私は腹をくくって、テスト自動化も行うことにした。[l][
 @fadeoutbgm
 _　プロジェクトマネジメントとテスト自動化担当、両立できると思っていたのだが……。[l][r]
 [r]
+@playse storage="voice/scene_01_01/mob-01-01-02.ogg"
 「PMさん、自動テストツールの使い方がよくわからなくて……」[l][r]
+@playse storage="voice/scene_01_01/mob-01-01-03.ogg"
 「例の件どうなってます？」[l][r]
+@playse storage="voice/scene_01_01/mob-01-01-04.ogg"
 「PM君、遅延が発生しているようだが大丈夫かね？」[l][r]
 [r]
 @chara_mod name="main" face="down"

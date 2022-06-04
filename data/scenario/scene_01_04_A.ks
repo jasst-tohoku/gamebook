@@ -16,9 +16,10 @@ _　今回は（気持ちの面はさておき）部長が薦めてきたツー�
 [cm]
 _　その後、順調にテスト自動化が進んでいるように見えたものの……。[l][r]
 [r]
+@chara_show name="leader"
+@playse storage="voice/scene_01_04_A/leader-01-04-A-01.ogg"
 「PMさん、ちょっといいですか？　実は困ったことになってまして……」[l][r]
 [r]
-@chara_show name="leader"
 _　テストリーダーが話しかけてきた。悪い予感がする。[l][r]
 
 *choice
