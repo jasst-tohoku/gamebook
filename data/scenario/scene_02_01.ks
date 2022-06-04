@@ -54,6 +54,7 @@ _　後期以降は試作機や本番機のテストや改修作業に効率が�
 _　キックオフミーティングの後に部長に相談するとこう言われた。[l][r]
 [r]
 @chara_show name="manager"
+@playse storage="voice/scene_02_01/manager-02-01-01.ogg"
 「きみがテストを自動化すればPRJ後期もうまく行くんじゃない？」[l][r]
 [r]
 _　……はぁ！？[l][r]
@@ -66,7 +67,9 @@ _　いきなり何を言っているんだ。[l][r]
 
 _　……そういえば、このまえの1on1で、最近ソフトウェアテストに興味があって自動テストの勉強をしていることを話していたんだった。[l][r]
 [r]
-「PRJ初期は余裕があるから試してみればいいよ。QA部門はPRJ後期から関わるって言ってるから、それまでは考えるつもりはないみたいだ。[l][r]
+@playse storage="voice/scene_02_01/manager-02-01-02.ogg"
+「PRJ初期は余裕があるから試してみればいいよ。[l][playse storage="voice/scene_02_01/manager-02-01-03.ogg"]QA部門はPRJ後期から関わるって言ってるから、それまでは考えるつもりはないみたいだ。[l][r]
+@playse storage="voice/scene_02_01/manager-02-01-04.ogg"
 _　PRJ後期の残業まみれを避けられればいいよ」[l][r]
 [r]
 _　……好き勝手なことを言ってくるなぁ。[l][r]
@@ -123,6 +126,7 @@ _　…………[l][r]
 
 [cm]
 
+@playse storage="voice/scene_02_01/manager-02-01-05.ogg"
 「それで、今出ている不具合はどのくらいで修正できそうなの？」[l][r]
 [r]
 @fadeoutbgm
@@ -177,6 +181,7 @@ _　…………[l][r]
 [cm]
 
 @fadeoutbgm
+@playse storage="voice/scene_02_01/leader-02-01-01.ogg"
 「みなさんが何を根拠に『機能を実装した』としているのか、教えてくださいよ！」[l][r]
 [r]
 @chara_show name="leader"
@@ -188,8 +193,11 @@ _　不具合を見つけるのが彼の仕事だから仕方がない気もす�
 
 [cm]
 
+@playse storage="voice/scene_02_01/leader-02-01-02.ogg"
 「単純なロジックミスでの不具合が結構多いんですよ。[l][r]
-_　それだけならいいんですが、そういったミスが残っている状態でみんなは次の機能実装も進めてるんです。そんな状態だから、不具合を直してもデグレが頻発してて困ってるんです。[l][r]
+@playse storage="voice/scene_02_01/leader-02-01-03.ogg"
+_　それだけならいいんですが、そういったミスが残っている状態でみんなは次の機能実装も進めてるんです。[l][playse storage="voice/scene_02_01/leader-02-01-04.ogg"]そんな状態だから、不具合を直してもデグレが頻発してて困ってるんです。[l][r]
+@playse storage="voice/scene_02_01/leader-02-01-05.ogg"
 _　今日もデグレについて何度説明しに行ったか……」[l][r]
 [r]
 @chara_hide name="leader"
