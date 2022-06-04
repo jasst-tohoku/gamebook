@@ -10,22 +10,22 @@
 
 [if exp="sf.end01==true && sf.end02==true && sf.end03==true && sf.end04==true"]
   @bg storage="white.jpg" time=500
-  @bg storage="title_after.jpg" time=100
+  @bg storage="title_white.jpg" time=100
 [else]
   @bg storage="black.jpg" time=500
-  @bg storage="title.jpg" time=100
+  @bg storage="title_black.jpg" time=100
 [endif]
-@wait time=200
+@wait time=700
 
 *start
 ;「まえがき」ボタン
-@button x=500 y=400 graphic="button/go_to_foreword_off.gif" enterimg="button/go_to_foreword_on.gif" target="foreword"
+@button x=850 y=400 graphic="button/go_to_foreword_off.gif" enterimg="button/go_to_foreword_on.gif" target="foreword"
 
 ;「はじめから」ボタン
-@button x=500 y=500 graphic="button/go_to_start_off.gif" enterimg="button/go_to_start_on.gif" target="gamestart"
+@button x=850 y=500 graphic="button/go_to_start_off.gif" enterimg="button/go_to_start_on.gif" target="gamestart"
 
 ;「解説」ボタン
-@button x=500 y=600 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="commentary"
+@button x=850 y=600 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="commentary"
 
 [s]
 
