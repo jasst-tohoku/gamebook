@@ -41,6 +41,8 @@
 ;最初は右下のメニューボタンを非表示にする
 @hidemenubutton
 
+@start_keyconfig
+
 ;タイトル画面へ移動
 @jump storage="title.ks"
 
