@@ -89,8 +89,7 @@ _　どちらのツールを採用しようか。[r]
 _　２週間後、テストリーダーからトライアルの報告があった。[r]
 _　概要は以下のようなものだった。どちらのツールを使おうか。[r]
 [r]
-@image layer=1 storage=table_01.png visible=true top=170 left=150
-[r]
+@image layer=1 storage=compare_tools.png visible=true top=140 left=150
 [r]
 [r]
 [r]

@@ -2,10 +2,19 @@
 
 *start
 
+
+;表を右部に表示するとき用のメッセージレイヤ
+@position layer="message1" page="fore" left=90 top=5 width=770 height=710 visible=false
+@position layer="message1" page="fore" margint=10 marginl=50 marginr=70 marginb=30
+
+;右部に表示する表のレイヤ
+@image layer=1 storage="tdd_cycle.jpg" visible=false top=5 left=860
+
 [cm]
 
 *choice1
 [cm]
+@switchlayer0
 [nowait]
 @chara_show name="main"
 
@@ -24,6 +33,7 @@ _　自動化の以前にどうテストしていこう？[r]
 [cm]
 
 @chara_hide_all
+@switchlayer1
 [nowait]
 ＜解説＞[r]
 デュアルターゲット開発には以下のリスクがあります。[r]
@@ -40,6 +50,7 @@ _　自動化の以前にどうテストしていこう？[r]
 
 *choice2
 [cm]
+@switchlayer0
 [nowait]
 @chara_show name="main"
 
@@ -59,6 +70,7 @@ _　テスト資産はどうやって扱おうか。[r]
 *answer2
 [cm]
 @chara_hide_all
+@switchlayer0
 [nowait]
 ＜解説＞[r]
 デュアルターゲットとは、最初からコードを少なくとも2つのプラットフォーム、最終ターゲットとホストシステム、で動くように設計することを意味しています。[r]
@@ -74,6 +86,7 @@ _　テスト資産はどうやって扱おうか。[r]
 
 *choice3
 [cm]
+@switchlayer0
 [nowait]
 @chara_show name="main"
 
@@ -91,6 +104,7 @@ _　どうやってテストの自動化を進めようか。[r]
 
 *answer3
 [cm]
+@switchlayer0
 @chara_hide_all
 [nowait]
 ＜解説＞[r]
@@ -111,6 +125,7 @@ _　どうやってテストの自動化を進めようか。[r]
 
 *choice4
 [cm]
+@switchlayer0
 [nowait]
 @chara_show name="main"
 
@@ -128,6 +143,7 @@ _　これらをどうやって活かそうか。[r]
 
 *answer4
 [cm]
+@switchlayer1
 @chara_hide_all
 [nowait]
 ＜解説＞[r]
@@ -143,6 +159,7 @@ _　これらをどうやって活かそうか。[r]
 
 *choice5
 [cm]
+@switchlayer0
 [nowait]
 @chara_show name="main"
 
@@ -159,6 +176,7 @@ _　実装ではモックオブジェクトは本来必要な機能を実装し�
 
 *answer5
 [cm]
+@switchlayer1
 @chara_hide_all
 [nowait]
 ＜解説＞[r]

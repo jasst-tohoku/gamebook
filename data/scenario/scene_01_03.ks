@@ -20,7 +20,7 @@ _　概要は以下のようなものだった。[l][r]
 [r]
 @layopt layer="message0" visible=false
 @playse storage="se/se_paper.ogg"
-@image layer=1 storage=table_01.png visible=true top=140 left=150
+@image layer=1 storage=compare_tools.png visible=true top=140 left=150
 [l]
 @playse storage="voice/scene_01_03/leader-01-03-01.ogg"
 [l]

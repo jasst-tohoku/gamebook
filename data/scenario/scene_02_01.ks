@@ -8,23 +8,7 @@
 @position layer="message1" page="fore" margint=10 marginl=50 marginr=70 marginb=30
 
 ;下部に表示する表のレイヤ
-@image layer=1 storage="table_02_01.png" visible=false top=480 left=95
-
-;レイヤ切り替えマクロ
-[macro name="switchlayer0"]
-@layopt layer=1 visible=false
-@layopt layer="message1" visible=false
-@layopt layer="message0" visible=true
-@current layer="message0"
-[endmacro]
-
-[macro name="switchlayer1"]
-@layopt layer="message0" visible=false
-@layopt layer="message1" visible=true
-@current layer="message1"
-@layopt layer=1 visible=true
-[endmacro]
-
+@image layer=1 storage="devices.png" visible=false top=5 left=95
 
 @chara_hide_all
 @playbgm storage="scene.ogg"

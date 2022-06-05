@@ -35,6 +35,12 @@
 ;BGM設定
 @bgmopt volume=10
 
+;メッセージウィンドウの設定
+@position layer="message0" page="fore" left=90 top=5 width=1100 height=710 visible=false
+
+;文字が表示される領域を調整
+@position layer="message0" page="fore" margint=10 marginl=50 marginr=70 marginb=30 visible=false
+
 ;メッセージボックスは非表示
 @layopt layer="message0" visible=false
 
@@ -93,6 +99,22 @@
   @eval exp="tf.fromEnd=false"
 [endif]
 [endmacro]
+
+;レイヤ切り替えマクロ
+[macro name="switchlayer0"]
+@layopt layer=1 visible=false
+@layopt layer="message1" visible=false
+@layopt layer="message0" visible=true
+@current layer="message0"
+[endmacro]
+
+[macro name="switchlayer1"]
+@layopt layer="message0" visible=false
+@layopt layer="message1" visible=true
+@current layer="message1"
+@layopt layer=1 visible=true
+[endmacro]
+
 
 ;タイトル画面へ移動
 *goToTitle
