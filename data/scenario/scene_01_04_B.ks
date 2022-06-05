@@ -1,8 +1,5 @@
 ;プロジェクトマネージャ編4B
 
-*goToTitle
-@jump storage="title.ks"
-
 
 *start
 
@@ -15,11 +12,7 @@ _　今回はテストリーダーが検討していたツールを使うこと�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　その後、順調にテスト自動化が進んでいるように見えたものの……。[l][r]
 [r]
@@ -51,17 +44,9 @@ _　こうなっては仕方がない。[l][r]
 _　テストケースを全て手動で実行することにした。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　リグレッションテストの実行に膨大な工数がかかるようになり、充分なテストが行われず、バージョンアップを行うたびにデグレードが発生する状態になってしまった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_04_B.ks"
 
 
 *selectB
@@ -81,17 +66,9 @@ _　開発者からも、[l][r]
 _　と言われてしまった。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　信頼できる自動テストは、ついに実現できなかった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_04_B.ks"
 
 
 *selectC

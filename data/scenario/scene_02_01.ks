@@ -1,10 +1,6 @@
 ;組込開発者編1
 
 
-*goToTitle
-@jump storage=title.ks
-
-
 *start
 
 ;表を下部に表示するとき用のメッセージレイヤ
@@ -91,13 +87,8 @@ _　評価環境は１台しかない評価機のことであり、評価環境�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message1" visible=true
-@current layer="message1"
+@restore layer="message1"
 @layopt layer=1 visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
 
 _　自動化の以前にどうテストしていこう？[l][r]
 [r]
@@ -146,18 +137,9 @@ _　リリースは延期する方向で進めているらしい。[l][r]
 _　わたしたちの担当範囲も別チームで作り直す方向で進めるらしい。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　部長からは会社の責任であり、個人で抱え込まないように言われたが、プロジェクト開始時にあったわたしの自信は今はもう無くなってしまった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_02_01.ks"
 
 
 *selectB
@@ -203,20 +185,11 @@ _　今日もデグレについて何度説明しに行ったか……」[l][r]
 @chara_hide name="leader"
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　テストは１人、実装が４人の体制で進めている。彼がテストするよりも実装が先行することを想定してはいた。[l][r]
 _　これまでは実装は計画どおりに進んでいたが、最近は不具合の対応で予定していた機能実装が進んでいない、という話も増えてきた。[l][r]
 _　テストを並列実行しているから実装完了後の不具合修正期間は短めに見ていたが、見通しが甘かったかもしれないなぁ……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_02_01.ks"
 
 
 *selectC

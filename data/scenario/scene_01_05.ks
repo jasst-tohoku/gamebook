@@ -1,18 +1,11 @@
 ;プロジェクトマネージャ編5
 
-*goToTitle
-@jump storage="title.ks"
-
 
 *start
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　そしてある日……私は部長に呼び出された。[l][r]
 _　“お褒めのことば”でもくれるのだろうか。[l][r]
@@ -56,17 +49,9 @@ _　その都度メンテナンスを試みたものの、誰もメンテナン�
 [r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　そして苦労して作った自動テストは使われなくなり、以降リリースのたびにデグレが発生する状況になってしまった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_05.ks"
 
 *selectB
 [cm]
@@ -84,13 +69,5 @@ _　私は部長に、テスト自動化は「ここまでやれば終わり」�
 _　部長は完全に納得したわけではなさそうだったが、一応聞き入れてくれたようだ。[l][r]
 _　これからも、自動テストをうまく使って、開発を進めていこう。[l][r]
 
-[cm]
-
 @eval exp="sf.end01=true"
-@chara_hide_all
-@layopt layer="message0" visible=false
-@bg storage="white.jpg" time=1000 method="fadeIn"
-@bg storage="happy_end.jpg" time=1500 method="fadeIn"
-[l]
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+[happyend]

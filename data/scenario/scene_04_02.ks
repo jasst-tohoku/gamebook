@@ -1,8 +1,5 @@
 ;開発者編2
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -26,11 +23,7 @@ _　リファクタリングは、やった方がいいって開発が上手い�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　開発プロセス上は、実装前に基本設計するフェーズがあるけど、毎回レビューでの指摘が多くって、いまだに設計が上手くできる自信がないんだよね。[l][r]
 _　リファクタリングで設計を向上できるテスト駆動開発だったら、もしかして、開発プロセスでの設計の役割が変えられるかもしれない？[l][r]
@@ -107,15 +100,7 @@ _　大規模な修正が必要になりそうで、先行できた計画の余�
 [r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　部長のいう通りになってしまった。[l][r]
 _　あのとき、部長がしっかり止めてくれれば違ったはずなのになぁ……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_02.ks"

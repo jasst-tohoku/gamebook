@@ -2,6 +2,7 @@
 
 [cm]
 
+@start_keyconfig
 @chara_hide_all
 @hidemenubutton
 @layopt layer="message0" visible=false

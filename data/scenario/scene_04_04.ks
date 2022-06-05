@@ -1,8 +1,5 @@
 ;開発者編4
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -31,11 +28,7 @@ _　ん？[l][r]
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 @playse storage="voice/scene_04_04/leader-04-04-04.ogg"
 「コードレビューって今回はどうしますか？」[l][r]
@@ -90,17 +83,9 @@ _　単体テストはチームで共有しているが、コードを理解し�
 _　もうちょっと先のことまで考えてれば違ったかな、と思っていると、大きな音がした。ホワイトボードを運ぶ途中で、コードに引っ掛けて机の備品を床にひっくり返してしまったようだ。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　悩みは尽きないなぁ、とため息がでる。片付けを手伝いに行こうか……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_04.ks"
 
 
 *selectB
@@ -144,14 +129,6 @@ _　なかなか完成しない実装が多くてイライラしていたわた�
 [r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　せめて、単体テストを成功させてから、コードレビューに持ってきてよ。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_04.ks"

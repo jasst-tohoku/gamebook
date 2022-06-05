@@ -1,8 +1,5 @@
 ;組織管理者編3
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -19,12 +16,8 @@ _　スコープも定まったし、部長に報告だ。[l][r]
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
+@restore
 @chara_show name="manager"
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
 
 @playse storage="voice/scene_03_03/manager-03-03-01.ogg"
 「システムテストを自動化するんだね。[l][playse storage="voice/scene_03_03/manager-03-03-02.ogg"]自動テストが構築できたら手動テストの工数はゼロになるよね。[l][playse storage="voice/scene_03_03/manager-03-03-03.ogg"]初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
@@ -49,17 +42,9 @@ _　なんの工数を計上してもらおうか。[l][r]
 _　手動テストと同じ工数では、使用するテストツールの選定までしか終わらなかった。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　部長からはなぜ何もできていないんだと詰められ、これからは毎回手動で実施することになった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_03.ks"
 
 
 *selectB
@@ -71,17 +56,9 @@ _　部長からはなぜ何もできていないんだと詰められ、これ�
 _　自動テスト担当者は今回使おうとしているツールを使ったことがなかったよう。実装する時間に追われて、保守が難しいテストコードがつくられてしまった。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　最終的にはリグレッションテストを楽にするために自動化したのに、手動テスト工数以上の保守工数がかかってしまっている。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_03.ks"
 
 
 *selectC

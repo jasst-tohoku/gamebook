@@ -1,8 +1,5 @@
 ;開発者編5
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -66,12 +63,8 @@ _　今は強制的に10分待たされるから、開発するにも集中が�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
+@restore
 @chara_show name="leader"
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
 
 _　実装時の好きなタイミングで単体テストを実行できるようにしているし、構成管理リポジトリへの反映は単体テストが成功したときにのみできるようにしている。実行頻度は高いので時間が長いのは厳しいが……。[l][r]
 [r]
@@ -128,17 +121,9 @@ _　開発のリズムが悪いのは順調な時には気にならないけど�
 [r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　あぁ、テストに失敗した通知が出ているのが見えた……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_05.ks"
 
 
 *selectB
@@ -206,16 +191,8 @@ _　試したことが見える成果になったことがとっても嬉しい�
 _　よし！[l][r]
 _　この喜びをさっそくチームメンバーと共有しよう。[l][r]
 
-[cm]
-
 @eval exp="sf.end04=true"
-@chara_hide_all
-@layopt layer="message0" visible=false
-@bg storage="white.jpg" time=1000 method="fadeIn"
-@bg storage="happy_end.jpg" time=1500 method="fadeIn"
-[l]
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+[happyend]
 
 
 *selectC
@@ -253,14 +230,6 @@ _　しかし、不具合がある実装を前提に、新しい機能の実装�
 _　基本的なフローに関わる範囲でも、原因特定が難しい不具合がいくつかあり、それを直さないとシステムテストができない状態だ。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　まだ、渡せる時期が分かるまで時間がかかりそうだと、QA部門に説明をしなければならない。厳しい顔を向けられており、とても気が重い……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_05.ks"

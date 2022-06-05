@@ -1,8 +1,5 @@
 ;開発者編1
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 @chara_hide_all
@@ -41,11 +38,7 @@ _　最近はアジャイル開発の本とかも見ているけど、「テス�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　わたしがこれまで経験した開発では、あらかじめシステムを機能に分割しておいて、開発者ごとに複数の担当機能を割り当てていたんだっけ。[l][r]
 _　「テストファースト」っていう考え方だと、機能を実装するときに単体テストを用意するのは……[l][r]
@@ -95,20 +88,12 @@ _　チームメンバーからは単体テストを書くことを止めて、�
 _　単体テストを書かなくなると不具合が残ったままになってしまうので、今はもう少しこのままやってみよう、と伝えている。だが、このままではジリ貧だ。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　今は残業で単体テストを書いているが、疲労を隠せなくなってきた。対策を考えなければいけないのに、その頭が回らない。どうしよう……。[l][r]
 [r]
 @playse storage="voice/scene_04_01/main-04-01-01.ogg"
 「あぁ、ここの実装も、仕様と矛盾してる……」[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_01.ks"
 
 
 *selectC
@@ -153,14 +138,6 @@ _　そう言って部長は部屋から出て行ってしまった。[l][r]
 _　お客様に早く伝えた方が良いのは間違いないが、この会議の時間を惜しむほどではないはずだ。この場に居たくない、という感情が見て取れた。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　これから、不機嫌なQA部門とふたりきりで話さなければならないのか、と思うと気が重たくなってきた……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_01.ks"

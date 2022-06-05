@@ -1,8 +1,5 @@
 ;プロジェクトマネージャ編1
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 @chara_hide_all
@@ -35,11 +32,7 @@ _　今回は入念にリグレッションテストをしておいてほしい�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 @playse storage="voice/scene_01_01/main-01-01-01.ogg"
 「システムテストの自動化だって？」[l][r]
@@ -58,7 +51,7 @@ _　まして自動化となると……いったいどう始めるべきか。[
 
 
 *selectA
-@jump storage=scene_01_02.ks target=*start
+@jump storage="scene_01_02.ks" target="*start"
 [s]
 
 *selectB
@@ -83,19 +76,10 @@ _　彼らにはテスト自動化の経験がなく、スコープや粒度が�
 [r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　これから自動テストを直していたのでは間に合わない、今回も全て手動でなんとかするしかない……。[l][r]
 _　ああ、部長が見たことのないような顔でこちらに歩いてくるのが見える。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
-
+@badend storage="scene_01_01.ks"
 
 *selectC
 [cm]
@@ -121,15 +105,7 @@ _　プロジェクトマネジメントとテスト自動化担当、両立で�
 [r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　プロジェクトが遅れているのをなんとかしなければならず、テスト自動化に割く時間がほとんど取れていない。[l][r]
 _　自動テストの実装も進まず、このままではテストも間に合わず予定通りのリリースができない可能性が高い……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_01.ks"

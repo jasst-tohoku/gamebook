@@ -1,8 +1,5 @@
 ;組織管理者編4
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -38,11 +35,7 @@ _　テストを自動化するのに160時間、１回のテスト実行と保�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 手動テストの実施工数：20時間[r]
 テスト自動化実装工数：160時間[r]
@@ -69,18 +62,11 @@ _　現状の費用対効果だけでは部長は納得しなかった。[l][r]
 _　工数削減以外にも様々な効果があったのに、そこを考える必要があったのだ。そもそもリグレッションテストだって、リリース前だけじゃなくて、コミット毎に実施してもいいじゃないか！[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　気付いたときには時すでに遅し。[l][r]
 _　部長は自動化に悪いイメージを持ってしまって、説得が難しくなってしまった。[l][r]
 
-[cm]
+@badend storage="scene_03_04.ks"
 
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
 
 *selectB
 @jump storage="scene_03_05.ks" target="start"
@@ -96,14 +82,6 @@ _　部長は自動化に悪いイメージを持ってしまって、説得が�
 _　いつまで経っても自動化は進まない。もちろんスキルも上がらない。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　新しいブランチができるたびにリグレッションテストの回数は増えていく。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_04.ks"

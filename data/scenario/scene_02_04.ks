@@ -1,10 +1,6 @@
 ;組込開発者編4
 
 
-*goToTitle
-@jump storage=title.ks
-
-
 *start
 
 [cm]
@@ -58,13 +54,8 @@ _　プログラムを試作機上で動作させるためには評価環境よ�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message1" visible=true
-@current layer="message1"
+@restore layer="message1"
 @layopt layer=1 visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
 
 _　開発環境や評価環境での従来の自動テスト資産は十分にある。[l][r]
 _　これらをどうやって活かそうか。[l][r]
@@ -104,19 +95,9 @@ _　試作機テストの不具合調査をチームで行っているが、歯�
 _　これまで試作機で出てきた不具合には、ハードウェア仕様をこちらで把握しきれていなかったり、ハードウェアが原因だったりしたが、先日はソフトウェアの単純なロジックミスもあったりした。そのときはハードウェア部門から苦言を聞いたっけ。[l][r]
 @chara_mod name="main" face="down"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　試作機テストの不具合調査がこんなに難しいのは想定し切れていなかった。これでは本番機までに不具合を挙げきるのは無理そうだ。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
-
+@badend storage="scene_02_04.ks"
 
 *selectB
 @layopt layer=1 visible=false
@@ -165,15 +146,6 @@ _　みなさんは試作機が動かせることを最優先でお願いしま�
 @chara_hide name="qa"
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　その試作機だって予定通りに来なかったじゃないか。と言いたくなったが、場の空気が悪くなるだけだと思ったのでグッと堪えた。泣きたくなる気持ちを抑えて頷くだけだった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_02_04.ks"

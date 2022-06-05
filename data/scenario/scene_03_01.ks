@@ -1,8 +1,5 @@
 ;組織管理者編1
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 @chara_hide_all
@@ -39,11 +36,7 @@ _　最近実施したテスト仕様を見せてもらったが、適切にテ�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　さて、どのテストを自動化しよう。[l][r]
 
@@ -66,8 +59,6 @@ _　追加機能のテストを自動化したが、工数が膨れ上がって�
 _　これを毎回自動化するのは割に合わない。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　と思っていたら部長から、[l][r]
 [r]
 @playse storage="voice/scene_03_01/manager-03-01-01.ogg"
@@ -75,14 +66,7 @@ _　と思っていたら部長から、[l][r]
 [r]
 _　とお達しが来てしまった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_01.ks"
 
 
 *selectB
@@ -98,18 +82,9 @@ _　——１年後——[l][r]
 @fadeoutbgm
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　既に１年が経過したが、何の成果も得られていない。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_01.ks"
 
 
 *selectC
@@ -131,14 +106,6 @@ _　追加機能のテストを何とか自動化しようと四苦八苦して�
 _　と言われ心が折れた。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　全てを自動化は聞こえがいいけど、今の自分達の技術力では無理だった。狙いを絞るべきだった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_03_01.ks"

@@ -1,8 +1,5 @@
 ;プロジェクトマネージャ編2
 
-*goToTitle
-@jump storage="title.ks"
-
 
 *start
 
@@ -48,12 +45,8 @@ _　ずいぶん自信がありそうだな……。[l][r]
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
+@restore
 @chara_show name="leader"
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
 
 _　面倒なことになったが、ここはマネージャとしてビシッと決めねば。[l][r]
 [r]
@@ -86,17 +79,9 @@ _　細かい部分は自動テストスクリプトを書く必要があり、�
 _　結果として、バージョンアップ版のテストまでに自動化は完了せず、テストチームが手動で対応せざるを得なくなった。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　テストチームは連日の残業で疲弊し、多くの不具合を見逃したままバージョンアップ版がリリースされていくこととなった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_02.ks"
 
 
 *selectB
@@ -119,17 +104,9 @@ _　なんとか力技で自動テストの実装を続けたが、実装工数�
 _　結果として、バージョンアップ版のテストまでに自動化は完了せず、テストチームが手動で対応せざるを得なくなった。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　テストチームは連日の残業で疲弊し、多くの不具合を見逃したままバージョンアップ版がリリースされていくこととなった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_01_02.ks"
 
 
 *selectC

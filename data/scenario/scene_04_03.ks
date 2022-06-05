@@ -1,8 +1,5 @@
 ;開発者編3
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -77,11 +74,7 @@ _　こんなに教えてくれるなんて、この人は先生かな？　テ�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　さて、借りてきた書籍もひととおり目を通したし、単体テストの完了条件を決めよう。[l][r]
 _　ブラックボックステスト技法は実装内部に着目せず、入出力が仕様に合うかに着目したものだ。対して、ホワイトボックステスト技法は実装内部に着目したものだ。[l][r]
@@ -132,17 +125,9 @@ _　過去のプロジェクトが結構大変だったのに対して、今回�
 _　とはいえ、もっとうまく実装できた気もしている。何が良くなかったんだろうか。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　できればゆっくりと振り返りをしたいところだけど、これから、チームメンバーに残業が続くことを説得しなきゃ……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_04_03.ks"
 
 
 *selectB
@@ -182,15 +167,7 @@ _　とはいえ、QA部門にかかると、開発部門では捉えきれな�
 @chara_hide name="qa"
 _　心配しなくても良くできてる、と言われている。が、もっとうまくできた気がする。QA部門が不具合を見つけてくれたから大きな問題にならなそうなだけであって、もっと良いものを作れるように頑張らなければ。[l][r]
 
-[cm]
-
-@chara_hide_all
-@layopt layer="message0" visible=false
-@bg storage="end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+[end storage="scene_04_03.ks"]
 
 
 *selectC

@@ -41,9 +41,62 @@
 ;最初は右下のメニューボタンを非表示にする
 @hidemenubutton
 
-@start_keyconfig
+;マクロ定義
+
+;BAD END
+[macro name="badend"]
+[cm]
+@eval exp="tf.fromEnd=true"
+@layopt layer="message0" visible=false
+@playse storage="se/se_bad_end.ogg"
+@bg storage="bad_end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" storage=%storage target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
+[s]
+[endmacro]
+
+;END
+[macro name="end"]
+[cm]
+@chara_hide_all
+@layopt layer="message0" visible=false
+@playse storage="se/se_end.ogg"
+@bg storage="end.jpg" time=2000 method="fadeIn"
+[l]
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" storage=%storage target="choice"
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
+[s]
+[endmacro]
+
+;HAPPY END
+[macro name="happyend"]
+[cm]
+@chara_hide_all
+@layopt layer="message0" visible=false
+@bg storage="white.jpg" time=1000 method="fadeIn"
+@playse storage="se/se_happy_end.ogg"
+@bg storage="happy_end.jpg" time=1500 method="fadeIn"
+[l]
+@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
+[s]
+[endmacro]
+
+;BAD ENDからのリストア
+[macro name="restore"]
+[if exp="tf.fromEnd==true"]
+  @bg storage="bg_main.jpg" time=100
+  @chara_mod name="main" face="default"
+  @layopt layer=%layer|"message0" visible=true
+  @current layer=%layer|"message0"
+  @playbgm storage="scene.ogg"
+  @eval exp="tf.fromEnd=false"
+[endif]
+[endmacro]
 
 ;タイトル画面へ移動
+*goToTitle
+@eval exp="tf.fromEnd=false"
 @jump storage="title.ks"
 
 [s]

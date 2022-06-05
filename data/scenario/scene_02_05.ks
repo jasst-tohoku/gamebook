@@ -1,10 +1,6 @@
 ;組込開発者編5
 
 
-*goToTitle
-@jump storage=title.ks
-
-
 *start
 
 [cm]
@@ -16,11 +12,7 @@ _　そういったときにこれまでのテスト資産を使って共通部�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　あとは、評価環境では無い機能に対して作ったモックオブジェクトをどうするかだ。[l][r]
 _　実装ではモックオブジェクトは本来必要な機能を実装したものに置き換えるのだが……[l][r]
@@ -64,17 +56,9 @@ _　見積もりは問題なくできそうだ。原因が分からない不具�
 _　ただ、回避策は複雑な実装が必要そうだ。正直、リリース間際でやりたい作業ではない。また、残業や休日出勤も覚悟しておかないといけなそうだ。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　わたしは返事をしたが、疲れを隠すことができなかった。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_02_05.ks"
 
 
 *selectB
@@ -109,19 +93,10 @@ _　暗に、もっとしっかり作れ、と言われている……。[l][r]
 @chara_hide name="qa"
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　結構な数の不具合があるから、調査をするにも骨が折れる。とりあえず、仕様変更ミスのものは除外して原因調査しよう。[l][r]
 _　これは残業や休日出勤しないと一通りの調査は間に合わないかもしれないな……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
-
+@badend storage="scene_02_05.ks"
 
 *selectC
 [cm]
@@ -157,13 +132,5 @@ _　おぉ、本当に悪い気がしない。[l][r]
 _　最初は不安だったしテストの進め方で考えることは多かったけど、開発自体はいつもよりも順調にできていたと思う。[l][r]
 _　今回、良い製品が開発できるように向き合ったのは、結構自信になってきたかな。[l][r]
 
-[cm]
-
 @eval exp="sf.end02=true"
-@chara_hide_all
-@layopt layer="message0" visible=false
-@bg storage="white.jpg" time=1000 method="fadeIn"
-@bg storage="happy_end.jpg" time=1500 method="fadeIn"
-[l]
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+[happyend]

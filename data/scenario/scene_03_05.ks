@@ -1,8 +1,5 @@
 ;組織管理者編5
 
-*goToTitle
-@jump storage=title.ks
-
 
 *start
 
@@ -31,11 +28,7 @@ _　部長から工数の承認も得たし、実現に向けて準備を進め�
 
 *choice
 [cm]
-@bg storage="bg_main.jpg" time=100
-@chara_mod name="main" face="default"
-@layopt layer="message0" visible=true
-@playbgm storage="scene.ogg" cond="tf.fromEnd==true"
-@eval exp="tf.fromEnd=false"
+@restore
 
 _　テスト自動化担当と関係者を呼んで、自動テスト構築について打ち合わせよう。アジェンダはこんなところか。[l][r]
 _　・自動テストの実行タイミング[r]
@@ -62,17 +55,10 @@ _　テスト自動化には「テストを作る力」と「自動化する力�
 [r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　PMから勝手にテスト自動化を進めたことにも不信感を持たれ、テスト自動化の実装に暗雲が漂ってきた。[l][r]
 
-[cm]
+@badend storage="scene_03_05.ks"
 
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
 
 *selectB
 [cm]
@@ -84,17 +70,10 @@ _　スケジュールもPMに相談し、開発と協力しながら、テス�
 _　自動テストを安定して動かすハードウェアの納入には、半導体不足の影響で時間がかかるらしい。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
 _　PMからは、これ以上のスケジュール調整はできないと言われた。今回は、テスト自動化を諦めるしかないのか……。[l][r]
 
-[cm]
+@badend storage="scene_03_05.ks"
 
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
 
 *selectC
 [cm]
@@ -124,13 +103,6 @@ _　なんだ。部長はコスト削減と言いながらも、社内のモデ�
 _　それならそうと、最初から言ってくれればよかったのに。[l][r]
 _　今回は自動化できなかったテストケースもあるし、モデルプロジェクトにするにはもう少し時間がかかりそうだな。自動化したテストによって安定した品質が保てたら、ふるまい駆動開発にも挑戦してみたい。[l][r]
 
-[cm]
 
 @eval exp="sf.end03=true"
-@chara_hide_all
-@layopt layer="message0" visible=false
-@bg storage="white.jpg" time=1000 method="fadeIn"
-@bg storage="happy_end.jpg" time=1500 method="fadeIn"
-[l]
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+[happyend]

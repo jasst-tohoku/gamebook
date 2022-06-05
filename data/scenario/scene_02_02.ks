@@ -1,10 +1,6 @@
 ;組込開発者編2
 
 
-*goToTitle
-@jump storage=title.ks
-
-
 *start
 
 [cm]
@@ -69,15 +65,6 @@ _　仕様変更が入ると開発環境と評価環境それぞれのテスト�
 [r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
-@eval exp="tf.fromEnd=true"
-
 _　この先、試作機や本番機がくるのであれば、テスト資産が更に増えることになる。ますます管理が難しくなることを思えば、どれかのテスト資産の更新を止める必要があるかもしれない。なかなかうまく行かないなぁ……。[l][r]
 
-[cm]
-
-@layopt layer="message0" visible=false
-@bg storage="bad_end.jpg" time=2000 method="fadeIn"
-[l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice"
-@button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
-[s]
+@badend storage="scene_02_02.ks"
