@@ -6,6 +6,7 @@
 @chara_hide_all
 @hidemenubutton
 @layopt layer="message0" visible=false
+@freeimage layer=1
 @clearstack
 @stopbgm
 

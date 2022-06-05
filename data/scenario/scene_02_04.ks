@@ -25,10 +25,7 @@ _　…………[l][r]
 
 [cm]
 
-@layopt layer="message0" visible=false
-@layopt layer="message1" visible=true
-@current layer="message1"
-@layopt layer=1 visible=true
+@switchlayer1
 @chara_show name="manager"
 @playse storage="voice/scene_02_04/manager-02-04-01.ogg"
 「来週頭には試作機がくるけど、気になることはあるかな」[l][r]
@@ -55,7 +52,7 @@ _　プログラムを試作機上で動作させるためには評価環境よ�
 *choice
 [cm]
 @restore layer="message1"
-@layopt layer=1 visible=true
+@switchlayer1
 
 _　開発環境や評価環境での従来の自動テスト資産は十分にある。[l][r]
 _　これらをどうやって活かそうか。[l][r]
@@ -69,10 +66,7 @@ _　これらをどうやって活かそうか。[l][r]
 
 
 *selectA
-@layopt layer=1 visible=false
-@layopt layer="message1" visible=false
-@layopt layer="message0" visible=true
-@current layer="message0"
+@switchlayer0
 
 [cm]
 
@@ -100,19 +94,13 @@ _　試作機テストの不具合調査がこんなに難しいのは想定し�
 @badend storage="scene_02_04.ks"
 
 *selectB
-@layopt layer=1 visible=false
-@layopt layer="message1" visible=false
-@layopt layer="message0" visible=true
-@current layer="message0"
+@switchlayer0
 @jump storage=scene_02_05.ks target=*start
 [s]
 
 
 *selectC
-@layopt layer=1 visible=false
-@layopt layer="message1" visible=false
-@layopt layer="message0" visible=true
-@current layer="message0"
+@switchlayer0
 
 [cm]
 

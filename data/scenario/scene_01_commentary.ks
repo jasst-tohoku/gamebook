@@ -44,7 +44,7 @@ _　まして自動化となると……いったいどう始めるべきか。[
 
 
 *choice2
-@layopt layer=2 visible=false
+@layopt layer=1 visible=false
 [nowait]
 [cm]
 @chara_show name="main"
@@ -89,7 +89,7 @@ _　どちらのツールを採用しようか。[r]
 _　２週間後、テストリーダーからトライアルの報告があった。[r]
 _　概要は以下のようなものだった。どちらのツールを使おうか。[r]
 [r]
-@image layer=2 storage=table_01.png visible=true top=170 left=150
+@image layer=1 storage=table_01.png visible=true top=170 left=150
 [r]
 [r]
 [r]
@@ -109,7 +109,7 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 
 
 *answer3
-@layopt layer=2 visible=false
+@layopt layer=1 visible=false
 [cm]
 @chara_hide_all
 [nowait]
@@ -123,7 +123,7 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 
 
 *choice4A
-@layopt layer=2 visible=false
+@layopt layer=1 visible=false
 [nowait]
 [cm]
 @chara_show name="main"

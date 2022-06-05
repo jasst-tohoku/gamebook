@@ -4,6 +4,7 @@
 [clearfix]
 
 @chara_hide_all
+@freeimage layer=1
 
 ;メッセージウィンドウの設定
 @position layer="message0" left=90 top=5 width=1100 height=710 page=fore visible=true
