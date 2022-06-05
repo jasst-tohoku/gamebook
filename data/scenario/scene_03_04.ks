@@ -11,7 +11,8 @@
 [font color="0xffd700"]Ｃ）自動テストの実装工数のほかに、保守や運用の工数も計上してもらう。[resetfont][l][r]
 [r]
 @chara_show name="manager"
-「え、そんなにかかるの？　その結果、どれぐらい効果が出るの？」[l][r]
+@playse storage="voice/scene_03_04/manager-03-04-01.ogg"
+「え、そんなにかかるの？　[l][playse storage="voice/scene_03_04/manager-03-04-02.ogg"]その結果、どれぐらい効果が出るの？」[l][r]
 [r]
 _　部長は想像を超えた工数に驚いた様子だ。[l][r]
 _　正確な情報を提示するため、少し時間をもらい、テスト自動化担当に確認をお願いした。[l][r]
@@ -20,13 +21,19 @@ _　正確な情報を提示するため、少し時間をもらい、テスト�
 [cm]
 
 @chara_show name="leader"
-「テスト自動化にかかる工数と、それで減らせるテスト工数を調べればいいんですね。承知しました。[l][r]
+@playse storage="voice/scene_03_04/leader-03-04-01.ogg"
+「テスト自動化にかかる工数と、それで減らせるテスト工数を調べればいいんですね。[l][playse storage="voice/scene_03_04/leader-03-04-02.ogg"]承知しました。[l][r]
+@playse storage="voice/scene_03_04/leader-03-04-03.ogg"
 _　これまでテストを実施していた担当者にも確認して、明日、ご報告いたします」[l][r]
+@chara_hide name="leader"
 [r]
 ——翌日——[l][r]
 [r]
+@chara_show name="leader"
+@playse storage="voice/scene_03_04/leader-03-04-04.ogg"
 「昨日相談いただいた工数の件ですが、対象のテストケースは手で実行するのに20時間かかっていたことが分かりました。[l][r]
-_　テストを自動化するのに160時間、１回のテスト実行と保守に４時間かかる見込みです。リグレッションテストは本番リリース前の３か月に１回実施しているので、11回実施すればテスト工数が16時間減らせます」[l][r]
+@playse storage="voice/scene_03_04/leader-03-04-05.ogg"
+_　テストを自動化するのに160時間、１回のテスト実行と保守に４時間かかる見込みです。[l][playse storage="voice/scene_03_04/leader-03-04-06.ogg"]リグレッションテストは本番リリース前の３か月に１回実施しているので、11回実施すればテスト工数が16時間減らせます」[l][r]
 @chara_hide name="leader"
 
 *choice

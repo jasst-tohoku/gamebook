@@ -21,17 +21,21 @@ _　わたしはPMを呼び、どんなテストをしているかヒアリン�
 
 [cm]
 @chara_show name="leader"
+@playse storage="voice/scene_03_01/leader-03-01-01.ogg"
 「テストは、単体テストと結合テストを開発者、システムテストをテスト担当者が担当しています。[l][r]
-_　テスト駆動開発を取り入れているので単体テストは自動化してあります。……工数削減ですか？　結合テストも自動化が進んでいるので、手を入れるならシステムテストですかねぇ」[l][r]
+@playse storage="voice/scene_03_01/leader-03-01-02.ogg"
+_　テスト駆動開発を取り入れているので単体テストは自動化してあります。[l][playse storage="voice/scene_03_01/leader-03-01-03.ogg"]……工数削減ですか？　[l][playse storage="voice/scene_03_01/leader-03-01-04.ogg"]結合テストも自動化が進んでいるので、手を入れるならシステムテストですかねぇ」[l][r]
 [r]
 _　そうだ、他のプロジェクトから教わって数年前にテスト駆動開発を取り入れたんだった。ふるまい駆動開発まで持っていけるといいが、今回は置いておくとしよう。[l][r]
 _　システムテストはどんなテストをしているか、テスト担当者に聞いてみよう。[l][r]
+@chara_hide name="leader"
 
 [cm]
-
-「システムテストの内容ですか？　『追加機能のテスト』と『探索的テスト』、『リグレッションテスト』を実施しています」[l][r]
+@chara_show name="godhand"
+@playse storage="voice/scene_03_01/godhand-03-01-01.ogg"
+「システムテストの内容ですか？　[l][playse storage="voice/scene_03_01/godhand-03-01-02.ogg"]『追加機能のテスト』と『探索的テスト』、『リグレッションテスト』を実施しています」[l][r]
 _　最近実施したテスト仕様を見せてもらったが、適切にテスト設計されていることも確認できた。テストデータの作成も効率化が済んでいるようだ。テスト実行が自動化できれば、コストが削減できるかもしれない。[l][r]
-@chara_hide name="leader"
+@chara_hide name="godhand"
 
 *choice
 [cm]
@@ -64,7 +68,12 @@ _　これを毎回自動化するのは割に合わない。[l][r]
 @playbgm storage="bad_end.ogg"
 @eval exp="tf.fromEnd=true"
 
-_　と思っていたら部長から「そんな暇あったら手動でテストしてください！」とお達しが来てしまった。[l][r]
+_　と思っていたら部長から、[l][r]
+[r]
+@playse storage="voice/scene_03_01/manager-03-01-01.ogg"
+「そんな暇あったら手動でテストしてください！」[l][r]
+[r]
+_　とお達しが来てしまった。[l][r]
 
 [cm]
 
@@ -114,7 +123,12 @@ _　既に１年が経過したが、何の成果も得られていない。[l][
 [font color="0xffd700"]Ｄ）どのテストかは関係ない。すべてのテストを自動化する。[resetfont][l][r]
 [r]
 @fadeoutbgm
-_　追加機能のテストを何とか自動化しようと四苦八苦しているときに開発側から「もうその案件のテストは手動で終わってるよ」と言われ心が折れた。[l][r]
+_　追加機能のテストを何とか自動化しようと四苦八苦しているときに開発側から、[l][r]
+[r]
+@playse storage="voice/scene_03_01/mob-03-01-01.ogg"
+「もうその案件のテストは手動で終わってるよ」[l][r]
+[r]
+_　と言われ心が折れた。[l][r]
 @chara_mod name="main" face="orz"
 @playbgm storage="bad_end.ogg"
 @eval exp="tf.fromEnd=true"

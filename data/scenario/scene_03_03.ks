@@ -26,7 +26,8 @@ _　スコープも定まったし、部長に報告だ。[l][r]
 @playbgm storage="scene.ogg" cond="tf.fromEnd==true"
 @eval exp="tf.fromEnd=false"
 
-「システムテストを自動化するんだね。自動テストが構築できたら手動テストの工数はゼロになるよね。初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
+@playse storage="voice/scene_03_03/manager-03-03-01.ogg"
+「システムテストを自動化するんだね。[l][playse storage="voice/scene_03_03/manager-03-03-02.ogg"]自動テストが構築できたら手動テストの工数はゼロになるよね。[l][playse storage="voice/scene_03_03/manager-03-03-03.ogg"]初期構築には工数がかかると思うが、当面は手動テストと同じだけかかると想定していればいいかな？」[l][r]
 _　部長は年次の工数計画を確認している。[l][r]
 @chara_hide name="manager"
 _　なんの工数を計上してもらおうか。[l][r]
