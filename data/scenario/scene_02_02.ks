@@ -51,6 +51,7 @@ _　…………[l][r]
 [cm]
 @fadeoutbgm
 @chara_show name="qa"
+@playse storage="voice/scene_02_02/qa-02-02-01.ogg"
 「じゃあ、ミーティングの参加お願いね」[l][r]
 [r]
 @chara_hide name="qa"

@@ -109,7 +109,7 @@ _　いくつかの機能の挙動が試作機と評価機で異なっていた�
 [cm]
 @chara_show name="manager"
 @playse storage="voice/scene_02_05/manager-02-05-04.ogg"
-「いやぁ、無事製品がリリースできて良かったよ。[l][playse storage="voice/scene_02_05/manager-02-05-05.ogg"]言った通り、PRJ初期にテストの自動化を進めて役に立っただろう？」[l][r]
+「いやぁ、無事製品がリリースできて良かったよ。[l][playse storage="voice/scene_02_05/manager-02-05-05.ogg"]言った通り、プロジェクト初期にテストの自動化を進めて役に立っただろう？」[l][r]
 [r]
 _　……なんで部長の手柄みたいに言っているんだろう。[l][r]
 _　結局、試作機がきてからはしばらく残業まみれだったんだけど。[l][r]
