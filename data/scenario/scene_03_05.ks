@@ -95,6 +95,7 @@ _　すでに開発者が構築していた自動テストと連携できたた�
 [cm]
 
 @chara_show name="manager"
+@fadeoutbgm
 @fadeinbgm storage="happy_end.ogg" time=1000
 @playse storage="voice/scene_03_05/manager-03-05-05.ogg"
 「ジャスペイ開発プロジェクトは、テストプロセスやテストサイクルが更にうまく回るようになったな。[l][playse storage="voice/scene_03_05/manager-03-05-06.ogg"]会社のモデルプロジェクトにするために、まだ課題は残っているかね」[l][r]

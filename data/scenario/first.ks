@@ -57,7 +57,7 @@
 @playse storage="se/se_bad_end.ogg"
 @bg storage="bad_end.jpg" time=2000 method="fadeIn"
 [l]
-@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" storage=%storage target="choice"
+@button x=500 y=400 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" storage=%storage target=%target|"choice"
 @button x=500 y=500 graphic="button/back_to_title_off.gif" enterimg="button/back_to_title_on.gif" target="goToTitle"
 [s]
 [endmacro]
@@ -65,6 +65,7 @@
 ;END
 [macro name="end"]
 [cm]
+@eval exp="tf.fromEnd=true"
 @chara_hide_all
 @layopt layer="message0" visible=false
 @playse storage="se/se_end.ogg"
@@ -92,6 +93,7 @@
 [macro name="restore"]
 [if exp="tf.fromEnd==true"]
   @bg storage="bg_main.jpg" time=100
+  @chara_show name="main"
   @chara_mod name="main" face="default"
   @layopt layer=%layer|"message0" visible=true
   @current layer=%layer|"message0"
