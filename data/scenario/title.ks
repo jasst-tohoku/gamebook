@@ -21,13 +21,13 @@
 
 *start
 ;「まえがき」ボタン
-@button x=850 y=400 graphic="button/go_to_foreword_off.gif" enterimg="button/go_to_foreword_on.gif" target="foreword"
+@button x=850 y=400 graphic="button/go_to_foreword_off.gif" enterimg="button/go_to_foreword_on.gif" target="foreword" clickse="se/se_opening.ogg"
 
 ;「はじめから」ボタン
-@button x=850 y=500 graphic="button/go_to_start_off.gif" enterimg="button/go_to_start_on.gif" target="gamestart"
+@button x=850 y=500 graphic="button/go_to_start_off.gif" enterimg="button/go_to_start_on.gif" target="gamestart" clickse="se/se_opening.ogg"
 
 ;「解説」ボタン
-@button x=850 y=600 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="commentary"
+@button x=850 y=600 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="commentary" clickse="se/se_opening.ogg"
 
 [s]
 

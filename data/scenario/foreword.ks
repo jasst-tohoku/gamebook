@@ -12,14 +12,16 @@
 @position layer="message0" page="fore" margint=10 marginl=50 marginr=70 marginb=30
 
 ;背景を設定
-@bg storage="bg_main.jpg" time=100
+@bg storage="white.jpg" time=500
+@bg storage="bg_main.jpg" time=500
+
 
 ;メッセージウィンドウの表示
 @layopt layer="message0" visible=true
 
 [font size=45]まえがき[resetfont][l][r]
 [r]
-本資料は「JaSST’22 Tohoku」における自動テスト導入の流れをストーリー形式で学ぶワークショップ用資料をベースにしたノベルゲームです。[l][r]
+本ゲームは「JaSST’22 Tohoku」における自動テスト導入の流れをストーリー形式で学ぶワークショップ用資料をベースにしたノベルゲームです。[l][r]
 [r]
 ストーリーを読み進めながら、途中にある選択肢を選んで自動テスト導入を成功（HAPPY END）に導いてください。[l][r]
 [r]
@@ -35,14 +37,35 @@
 
 [cm]
 
-[font size=45]クレジット[resetfont][l][r]
+[nowait]
+[font size=45]クレジット[resetfont][r]
 [r]
 ◆ノベルゲーム開発ツール[r]
 _　ティラノスクリプト[r]
 _　https://tyrano.jp/[r]
 [r]
-◆シナリオ[r]
+◆BGM[r]
+_　DOVA-SYNDROME[r]
+_　https://dova-s.jp/[r]
+[r]
+◆効果音[r]
+_　魔王魂[r]
+_　https://maou.audio/[l][r]
+
+[cm]
+
+[font size=45]クレジット[resetfont][r]
+[r]
+◆ボイス[r]
+_　VOICEPEAK[r]
+_　https://www.ah-soft.com/voice/6nare/[r]
+[r]
+◆ゲーム演出・スクリプト[r]
+_　kishiken[r]
+[r]
+◆シナリオ・解説・背景・人物シルエット[r]
 _　JaSST’22 Tohoku 実行委員会[l][r]
+[endnowait]
 
 ;タイトル画面へ移動
 @jump storage="title.ks"

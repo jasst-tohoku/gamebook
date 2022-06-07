@@ -4,14 +4,16 @@
 [clearfix]
 
 @chara_hide_all
-@switchlayer0
 @freeimage layer=1
 
 ;背景を設定
-@bg storage="bg_main.jpg" time=100
+@bg storage="white.jpg" time=500
+@bg storage="bg_main.jpg" time=500
 
 ;メッセージウィンドウの表示
 @layopt layer="message0" visible=true
+@switchlayer0
+
 
 ;BGMの再生
 @playbgm storage="commentary.ogg"
