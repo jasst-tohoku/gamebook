@@ -38,6 +38,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 @hidemenubutton
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"
+@playse storage="se/se_title_01.ogg"
 @bg storage="caption_01.jpg" time=1500 method="fadeInLeft"
 [l]
 [cm]
@@ -52,6 +53,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 @hidemenubutton
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"
+@playse storage="se/se_title_02.ogg"
 @bg storage="caption_02.jpg" time=1500 method="fadeInLeft"
 [l]
 [cm]
@@ -66,6 +68,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 @hidemenubutton
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"
+@playse storage="se/se_title_03.ogg"
 @bg storage="caption_03.jpg" time=1500 method="fadeInLeft"
 [l]
 [cm]
@@ -80,6 +83,7 @@ _　　（単体テスト自動化、テスト駆動開発）[r]
 @hidemenubutton
 @layopt layer="message0" visible=false
 @bg storage="white.jpg" time=1000 method="fadeIn"
+@playse storage="se/se_title_04.ogg"
 @bg storage="caption_04.jpg" time=1500 method="fadeInLeft"
 [l]
 [cm]
