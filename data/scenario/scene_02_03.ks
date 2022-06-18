@@ -58,10 +58,10 @@ _　…………[lr]
 
 [cm]
 @fadeoutbgm
+@chara_show name="manager"
 @playse storage="voice/scene_02_03/manager-02-03-01.ogg"
 「そういえば、さっきのミーティングで試作機についてトラブルが起きてるっぽくてな……」[lr]
 [r]
-@chara_show name="manager"
 _　プロジェクト後期に入ったある日に、部長に呼び止められた。評価機で実装できる部分は全部実装し終わり、今は試作機の到着待ちの状況である。[lr]
 _　あとは試作機が届けば進められるのだけど。嫌な予感がする。[lr]
 [r]

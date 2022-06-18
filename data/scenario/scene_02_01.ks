@@ -107,11 +107,11 @@ _　…………[lr]
 
 [cm]
 
+@chara_show name="manager"
 @playse storage="voice/scene_02_01/manager-02-01-05.ogg"
 「それで、今出ている不具合はどのくらいで修正できそうなの？」[lr]
 [r]
 @fadeoutbgm
-@chara_show name="manager"
 _　部長から聞かれているが、わたしはとても答えられなかった。[lr]
 _　本番機が来てからテストを始めたが、不具合ばかりだった。不具合が多すぎて、まともにテストが実行しきれなかったくらいだ。[lr]
 _　不具合もいろいろな要因が絡んでいて、修正が困難なものが多い。[lr]
