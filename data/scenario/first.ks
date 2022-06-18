@@ -49,6 +49,14 @@
 
 ;マクロ定義
 
+;クリック待ち（改行あり）／バックログ反映
+[macro name="lr"]
+[l][r]
+[iscript]
+tf.system.backlog.push("");
+[endscript]
+[endmacro]
+
 ;BAD END
 [macro name="badend"]
 [cm]

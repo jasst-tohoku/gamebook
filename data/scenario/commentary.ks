@@ -18,7 +18,7 @@
 ;BGMの再生
 @playbgm storage="commentary.ogg"
 
-[font size=45]解説[resetfont][l][r]
+[font size=45]解説[resetfont][lr]
 [r]
 [nowait]
 HAPPY ENDを達成すると閲覧できます[r]
