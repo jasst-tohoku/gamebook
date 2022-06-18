@@ -20,8 +20,9 @@ _　まして自動化となると……いったいどう始めるべきか。[
 [font color="0xffd700"]Ｂ）テストは外注しているんだし、外注先のテスターに対してそれぞれの担当部分の自動化を指示しよう。[resetfont][r]
 [font color="0xffd700"]Ｃ）担当できる人はいなさそうだ、自分がプロジェクトマネージャーとテスト自動化担当者を兼任するしかないな。[resetfont][r]
 [endnowait]
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
 [s]
 
 *answer1
@@ -38,8 +39,8 @@ _　まして自動化となると……いったいどう始めるべきか。[
 “テスト自動化の作業をサブプロジェクトにして，片手間で片付けようとするような真似はしないことが肝心である。”[r]
 （引用：書籍『ソフトウェアテスト293の鉄則』鉄則120）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -58,9 +59,10 @@ _　どちらのツールを採用しようか。[r]
 [font color="0xffd700"]Ｂ）担当であるエンジニアが一番よく理解しているはず。部長には断りを入れて、テストリーダーが選んだツールを導入しよう。[resetfont][r]
 [font color="0xffd700"]Ｃ）どちらも机上で検討をしているだけで、実際に試してみていない。両方のツールを、まずはトライアル（パイロット）として一定期間試用してから判断だ。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
 [s]
 
 *answer2
@@ -75,8 +77,8 @@ _　どちらのツールを採用しようか。[r]
 [r]
 （参考：テスト技術者資格制度 Advanced Level シラバス テスト自動化エンジニアTest Automation Patterns Wiki “DO A PILOT”の項）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -101,9 +103,10 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 [font color="0xffd700"]Ａ）部長が薦めてきたツール[resetfont][r]
 [font color="0xffd700"]Ｂ）テストリーダーが検討していたツール[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4A"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4A"
 [s]
 
 
@@ -116,8 +119,8 @@ _　概要は以下のようなものだった。どちらのツールを使お�
 テスト自動化ツールを選定する際に考慮すべきポイントはプロジェクトによって異なります。[r]
 今回のストーリーではいずれのツールも選択の余地があり、PMやテストリーダーなど、各ステークホルダーが何を重視するかによって選ぶツールが変わります。[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -136,9 +139,10 @@ _　さて、どう対応しようか。[r]
 [font color=0xffd700]Ｂ）データ駆動など、自動テストの実装や保守の負担を軽減する可能性がある技法を取り入れてみよう。[resetfont][r]
 [font color=0xffd700]Ｃ）テスターチームに要員を投入して、マンパワーで全て解決するぞ！[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4A"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4B"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4A"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4B"
 [s]
 
 
@@ -155,8 +159,8 @@ _　さて、どう対応しようか。[r]
 [r]
 （引用：書籍『ソフトウェアテスト293の鉄則』鉄則127）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4A"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4A"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -179,9 +183,10 @@ _　どう対応しようか。[r]
 [font color=0xffd700]Ｂ）開発者に、代わりに自動テストを書いてもらう。[resetfont][r]
 [font color=0xffd700]Ｃ）メンバー同士相互のコードレビューや、開発者によるコードレビュー、ペアプログラミングを行う。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4A"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4B"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4A"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4B"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
 [s]
 
 
@@ -198,8 +203,8 @@ _　どう対応しようか。[r]
 [r]
 （引用：書籍『ソフトウェアテスト293の鉄則』鉄則123）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4B"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4B"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -220,8 +225,9 @@ _　ところでテストチームについてだが、自動化できたわけ�
 [font color="0xffd700"]Ａ）そうですね、これで人件費も削減でき、ハッピーです。[resetfont][r]
 [font color="0xffd700"]Ｂ）自動テストがある限り、保守運用は続きます。専任担当者は継続して必要です。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4B"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4B"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
 [s]
 
 
@@ -237,8 +243,8 @@ _　ところでテストチームについてだが、自動化できたわけ�
 [r]
 （引用：書籍『ソフトウェアテスト293の鉄則』鉄則117）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 *commentary

@@ -24,8 +24,9 @@ _　自動化の以前にどうテストしていこう？[r]
 [font color="0xffd700"]Ｂ）アーキテクチャが異なる開発環境でテストしても意味がない。開発環境ではテストをしないで、評価環境でのみテストを行う。[resetfont][r]
 [font color="0xffd700"]Ｃ）使えるものは何でも使う。開発環境でも評価環境でもテストを行う。[resetfont][r]
 [endnowait]
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
 [s]
 
 
@@ -43,8 +44,8 @@ _　自動化の以前にどうテストしていこう？[r]
 評価機があるときは組み込みTDDサイクル（右図）のステージ１～３を回すことでリスクを抑えて開発できます。[r]
 （参考：書籍「テスト駆動開発による組み込みプログラミング」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -61,9 +62,10 @@ _　テスト資産はどうやって扱おうか。[r]
 [font color="0xffd700"]Ａ）テスト資産はできる限り共通化したほうが良い。共通化できないところは分けるが、開発環境と評価環境で可能な限りテスト資産の共通化をすすめる。[resetfont][r]
 [font color="0xffd700"]Ｂ）テスト資産を分けて管理したほうが良い。実行するときは別々に実行するので、テスト資産の共通化は行わずに開発環境と評価環境で別々にテスト資産を用意する。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
 [s]
 
 
@@ -79,8 +81,8 @@ _　テスト資産はどうやって扱おうか。[r]
 デュアルターゲットを意識することで移植性の高いテスト資産を用意できます。[r]
 （参考：書籍「テスト駆動開発による組み込みプログラミング」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -96,9 +98,10 @@ _　どうやってテストの自動化を進めようか。[r]
 [font color="0xffd700"]Ｂ）インターフェースの仕様が分かれば開発できる。機能が無い部分は、インターフェース部で入力に対して決まった答えを返すダミー処理を作成して、それを使ってテストする。[resetfont][r]
 [font color="0xffd700"]Ｃ）機能が無いなら同等なものを用意すればいい。仕様を忠実に模したシミュレーターを作成して、それを使ってテストする。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4"
 [s]
 
 
@@ -118,8 +121,8 @@ _　どうやってテストの自動化を進めようか。[r]
 ・設定困難なものへの依存[r]
 （参考：書籍「テスト駆動開発による組み込みプログラミング」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -136,9 +139,10 @@ _　これらをどうやって活かそうか。[r]
 [font color="0xffd700"]Ｂ）これまでのテスト資産も活用しよう。従来のテストを行いつつ、試作機テストも適度に実行する。[resetfont][r]
 [font color="0xffd700"]Ｃ）これまで上手くやってきた方法を変える必要はない。従来通りのテストを行い、試作機テストを行わない。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
 [s]
 
 *answer4
@@ -152,8 +156,8 @@ _　これらをどうやって活かそうか。[r]
 開発環境でのテストも組込ではないTDDのように開発のリズムを維持したり、デグレードを防いだりするのに有用です。テストは積み上げて品質を担保することが鉄則です。[r]
 （参考：書籍「テスト駆動開発による組み込みプログラミング」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -170,8 +174,9 @@ _　実装ではモックオブジェクトは本来必要な機能を実装し�
 [font color="0xffd700"]Ｂ）モックオブジェクトを使ったテストで動作を確認できれば品質は保証できる。試作機ではモックオブジェクトを用いた自動テストを行い、試作機実装を用いたテストを行わない。[resetfont][r]
 [font color="0xffd700"]Ｃ）これまでのテスト資産も活用しよう。試作機ではモックオブジェクトを用いた自動テストも、試作機実装を用いたテストも両方行う。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 *answer5
@@ -184,8 +189,8 @@ _　実装ではモックオブジェクトは本来必要な機能を実装し�
 ハードウェア固有のテストを実施する前に、ハードウェアに依存しないテストを行うことで、問題の切り分けが容易になります。[r]
 （参考：書籍「テスト駆動開発による組み込みプログラミング」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 

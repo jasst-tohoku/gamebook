@@ -16,8 +16,9 @@ _　「テストファースト」っていう考え方だと、機能を実装�
 [font color="0xffd700"]Ｂ）一つの機能実装が終わった後だ。機能ができたら、すぐにその機能をテストしよう。[resetfont][r]
 [font color="0xffd700"]Ｃ）担当者のすべての機能実装が終わった後だ。他者との結合の前に、作った機能をテストしよう。[resetfont][r]
 [endnowait]
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice2"
 [s]
 
 
@@ -32,8 +33,8 @@ _　「テストファースト」っていう考え方だと、機能を実装�
 実装してからテストを書くと、その実装でうまくいくようなテストを書いてしまいます。実装が不完全であることを示すような、失敗するテストを開発者自身で作ることは心理的に困難なことが多いです。[r]
 （参考：書籍「テスト駆動開発」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice1"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -48,9 +49,10 @@ _　リファクタリングで設計を向上できるテスト駆動開発だ�
 [font color="0xffd700"]Ａ）コードレベルの設計向上が図れるだけで、全部じゃない。これまでどおり、基本設計を行おう。[resetfont][r]
 [font color="0xffd700"]Ｂ）事前に設計するよりも、学習しながら設計したほうが良いものになる。基本設計は行わずに、テスト駆動開発で設計品質を担保しよう。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice1"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice3"
 [s]
 
 
@@ -65,8 +67,8 @@ _　リファクタリングで設計を向上できるテスト駆動開発だ�
 テスト駆動だけでは解決ができない問題としてセキュリティや並行性が知られており、事前の設計は十分に検討することが望ましいと考えられます。[r]
 （引用：書籍「テスト駆動開発」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice2"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -83,9 +85,10 @@ _　単体テストでのテスト技法は……[r]
 [font color="0xffd700"]Ｂ）ホワイトボックステスト技法を使って、ブラックボックステスト技法を使わない。システムテストでは実装内部には着目しないので、開発者のテストではシステム内部に着目したテストを優先する。[resetfont][r]
 [font color="0xffd700"]Ｃ）ホワイトボックステスト技法もブラックボックステスト技法も両方使う。開発者も処理が仕様に合うかを着目することが重要だ。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice2"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice4"
 [s]
 
 
@@ -100,8 +103,8 @@ _　単体テストでのテスト技法は……[r]
 機能単位の動作を確認するブラックボックスのテストはテスト担当者が実行します。しかし、その機能を実装する開発者が確認できると、不具合の検出が早期にできる可能性が高まります。[r]
 （参考：書籍「ソフトウェア品質を高める開発者テスト アジャイル時代の実践的・効率的なテストのやり方」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice3"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -120,9 +123,10 @@ _　今回は……[r]
 [font color="0xffd700"]Ｂ）実装後の単体テストが成功してから、コードレビューを実施しよう。[resetfont][r]
 [font color="0xffd700"]Ｃ）実装後の単体テスト成否に関わらず、コードレビューを実施しよう。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4"
-@button x=800 y=630 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice3"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer4"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=800 y=635 graphic="button/go_to_next_choice_off.gif" enterimg="button/go_to_next_choice_on.gif" target="choice5"
 [s]
 
 
@@ -140,8 +144,8 @@ _　今回は……[r]
 あらかじめ機械で判断できるところは機械に任せて、それ以外のところに人が集中できるようにしましょう。[r]
 （参考：書籍「ソフトウェア品質を高める開発者テスト アジャイル時代の実践的・効率的なテストのやり方」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice4"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -157,8 +161,9 @@ _　この時間のかかるテストは実際に不具合を見つけた実績�
 [font color="0xffd700"]Ｂ）時間がかかるテストは分けて扱おう。時間が短いテストはこれまでどおり実行し、時間がかかるテストは構成管理リポジトリへの反映時のみに実行できるようにしよう。[resetfont][r]
 [font color="0xffd700"]Ｃ）これまでの単体テスト実行は取り止めて、QAへの受け渡し直前に実行するようにしよう。[resetfont][r]
 [endnowait]
-@button x=200 y=630 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4"
-@button x=500 y=630 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+@button x=200 y=635 graphic="button/go_to_prev_choice_off.gif" enterimg="button/go_to_prev_choice_on.gif" target="choice4"
+@button x=500 y=605 graphic="button/go_to_commentary_off.gif" enterimg="button/go_to_commentary_on.gif" target="answer5"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 
@@ -172,8 +177,8 @@ _　この時間のかかるテストは実際に不具合を見つけた実績�
 処理時間が大きいテストは単体テストとは別に管理して例えば構成管理リポジトリの更新時に実行することで、頻度は落としながらも早期に不具合を検出できると良いでしょう。[r]
 （引用：書籍「テストから見えてくるグーグルのソフトウェア開発」）[r]
 [endnowait]
-@button x=500 y=630 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
-@button x=800 y=630 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
+@button x=500 y=605 graphic="button/back_to_choice_off.gif" enterimg="button/back_to_choice_on.gif" target="choice5"
+@button x=500 y=660 graphic="button/back_to_index_off.gif" enterimg="button/back_to_index_on.gif" target="commentary"
 [s]
 
 

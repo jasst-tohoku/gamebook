@@ -9,6 +9,7 @@
 @freeimage layer=1
 @clearstack
 @stopbgm
+@nolog
 
 [if exp="sf.end01==true && sf.end02==true && sf.end03==true && sf.end04==true"]
   @bg storage="white.jpg" time=500
@@ -38,6 +39,7 @@
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
 @jump storage="scene_00.ks"
+@endnolog
 [s]
 
 *commentary

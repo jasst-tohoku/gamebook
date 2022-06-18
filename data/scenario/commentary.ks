@@ -3,6 +3,8 @@
 [cm]
 [clearfix]
 
+@layopt layer="message0" visible=false
+@nolog
 @chara_hide_all
 @freeimage layer=1
 
