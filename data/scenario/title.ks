@@ -38,8 +38,8 @@
 
 *gamestart
 ;一番最初のシナリオファイルへジャンプする
-@jump storage="scene_00.ks"
 @endnolog
+@jump storage="scene_00.ks"
 [s]
 
 *commentary
