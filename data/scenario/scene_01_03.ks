@@ -24,20 +24,6 @@ _　概要は以下のようなものだった。[lr]
 [l]
 @playse storage="voice/scene_01_03/leader-01-03-01.ogg"
 [l]
-@playse storage="voice/scene_01_03/leader-01-03-02.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-03.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-04.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-05.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-06.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-07.ogg"
-[l]
-@playse storage="voice/scene_01_03/leader-01-03-08.ogg"
-[l]
 @layopt layer="message0" visible=true
 @chara_hide name="leader"
 [r]
